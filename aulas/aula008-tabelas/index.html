@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estudo de tabelas</title>
+  </head>
+  <body>
+    <h1>Estudo de tabelas em HTML</h1>
+
+    <!--Tabela Simples-->
+    <h2>Tabela Simples</h2>
+    <table border="1">
+      <caption>
+        Tabela Simples de Pessoas
+      </caption>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nome</th>
+          <th>Idade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Alice</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Bob</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Charlie</td>
+          <td>22</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!--Tabela intermediario-->
+    <h2>Tabela Intermediaria</h2>
+    <table border="1">
+      <caption>
+        Tabela de vendas
+      </caption>
+      <thead>
+        <tr>
+          <th>Produto</th>
+          <th>Quantidade</th>
+          <td>Preço Unitario</td>
+          <th>Total</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Produto A</td>
+          <td>10</td>
+          <td>R$ 20,00</td>
+          <td>R$ 200,00</td>
+        </tr>
+        <tr>
+          <td>Produto B</td>
+          <td>5</td>
+          <td>R$ 50,00</td>
+          <td>R$ 250,00</td>
+        </tr>
+        <tr>
+          <td>Produto C</td>
+          <td>2</td>
+          <td>R$ 100,00</td>
+          <td>R$ 200,00</td>
+        </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3"><strong>Total Geral</strong></td>
+            <td>R$ 650,00</td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <!--Tabela avançada-->
+      <h2>Tabela Avançada</h2>
+      <table border="1">
+        <caption>
+          Tabela de Funcionario
+        </caption>
+        <thead>
+          <tr>
+            <th rowspan="2">ID\</th>
+            <th rowspan="2">Nome\</th>
+            <th colspan="2">Salario\</th>
+            <th rowspan="2">Departamento\</th>
+          </tr>
+          <tr>
+            <th>Base</th>
+            <th>Comissões</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Alice</td>
+            <td>R$ 3000,00</td>
+            <td>R$ 500,00</td>
+            <td>Vendas</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Bob</td>
+            <td>R$ 4000,00</td>
+            <td>R$ 700,00</td>
+            <td>Marketing</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="5" style="text-align: center">Fim da tabela</td>
+          </tr>
+        </tfoot>
+      </table>
+    </body>
+  </html>
