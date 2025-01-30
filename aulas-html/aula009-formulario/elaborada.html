@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale-1.0" />
+    <title>Formulário Elaborado</title>
+  </head>
+  <body>
+    <!-- Titulo principal do formulário -->
+    <h1>Formulário de Inscrição</h1>
+    <form action="/enviar" method="post">
+      <!-- Campo para nome com validação obrigatória -->
+      <label for="nome">Nome Completo:</label>
+      <input
+        type="text"
+        id="nome"
+        name="nome"
+        placeholder="Digite seu nome completo"
+        required
+      />
+      <br /><br />
+
+      <!-- Campo para e-mail com validação para formato de e-mail -->
+      <label for="email">E-mail:</label>
+      <input
+        type="email"
+        id="email"
+        nome="email"
+        placeholder="exemplo@dominio.com"
+        required
+      />
+      <br /><br />
+
+      <!-- Campo para número de telefone -->
+      <label for="telefone">Telefone:</label>
+      <input
+        type="tel"
+        id="telefone"
+        name="telefone"
+        placeholder="(XX) XXXXX-XXXX"
+        pattern="\(\d(2)\) \d{5}-\d{4}"
+        required
+      />
+      <br /><br />
+
+      <!-- Campo para escolher o gênero com opções em uma lista-->
+      <label for="genero">Gênero:</label>
+      <select id="genero" nome="genero">
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+        <option value="outros">Outros</option>
+        <option value="prefiro_nao_dizer">Prefiro não dizer</option>
+      </select>
+      <br /><br />
+
+      <!-- Checkbox para aceitar os termos e condições-->
+      <label>
+        <input type="checkbox" name="termos" required /> Eu aceito os termos e
+        condições.
+      </label>
+      <br /><br />
+
+      <!-- Campo para escolher uma data-->
+      <label for="data_nascimento">Data de Nascimento:</label>
+      <input type="date" id="data_nascimento" name="data_nascimento" required />
+      <br />
+      <br />
+
+      <!-- Campo de seleção de múltiplos itens -->
+      <label for="interesses">Interesses (selecopne múltiplos):</label>
+      <select id="interesses" name="interesses[]" multiple>
+        <option value="esportes">Esportes</option>
+        <option value="musica">Músicas</option>
+        <option value="tecnologia">Tecnologia</option>
+        <option value="viagens">Viagens</option>
+      </select>
+      <br /><br />
+
+      <!-- Campo para upload de arquivo -->
+      <label for="arquivo">Envie seu cúrriculo (PDF):</label>
+      <input type="file" id="arquivo" name="arquivo" accept=".pdf" />
+      <br /><br />
+
+      <!-- Textarea para uma mensagem-->
+      <label for="mensagem">Mensagem:</label>
+      <textarea
+        id="mensagem"
+        name="mensagem"
+        rows="4"
+        placeholder="Escreva uma mensagem..."
+      ></textarea>
+      <br /><br />
+
+      <!-- Botão para envar o formulário -->
+      <button type="submit">Enviar Incrição</button>
+    </form>
+  </body>
+</html>
