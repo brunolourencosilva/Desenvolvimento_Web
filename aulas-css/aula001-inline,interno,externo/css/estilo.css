@@ -1,0 +1,13 @@
+h1 {
+    /*H1 tem a preferencia,a cor brown não é aplicada ao header*/
+    color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p {
+    color: cadetblue;
+    font-size: 2em;
+}
+
+header {
+    color: brown;
+}
