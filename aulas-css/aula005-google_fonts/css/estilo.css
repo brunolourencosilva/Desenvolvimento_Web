@@ -1,56 +1,68 @@
-/* Reset de margens e padding */
+/*Reset basico para garantir consiistencia no estilo*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo basico para o corpo*/
-body{
-    font-family: Arial,sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    padding: 20px;
+/* Estilo para o hearder */
+header{
+    background-color: #4caf50;
+    color: white;
     text-align: center;
-}
-
-/*Container para cada tipo de fonte*/
-.exemplo-fonte{
-    margin: 30px 0;
     padding: 20px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.exemplo-fonte{
-    font-size: 24px;
-    margin-bottom: 10px;
-    color:#333
+header h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5rem;
 }
 
-.exemplo-fonte p {
-    font-size: 20px;
-    line-height: 1.5;
+main{
+    padding: 20px;
 }
 
-.serifada p {
-    font-family: 'Times New Roman',Times,Serif;
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.sem-serifa p {
-    font-family: Arial, Helvetica, sans-serif;
+article {
+    flex: 1 1 calc(50% - 20px);
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-.monoespaçada p {
-    font-family: 'Corier New',Courier,monospace;
+article p {
+    font-size: 1.2rem;
+    line-height: 1.6;
 }
 
-.cursiva p {
-    font-family: 'Brush Script MT',cursive;
+.font-1 {
+    font-family: "Roboto",sans-serif;
+    font-weight: 400;
+    color: #333;
 }
 
-.fantasia p {
-    font-family: 'Papyrus',fantasy;
+.font-2 {
+    font-family: "Open Sans",sans-serif;
+    font-weight: 600;
+    color: #555;
+}
+
+.font-3 {
+    font-family: "Mea Culpa",sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+.font-1 {
+    font-family: "Playfair Display",sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #222;
 }
