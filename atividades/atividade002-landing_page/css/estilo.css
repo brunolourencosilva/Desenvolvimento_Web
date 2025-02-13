@@ -5,14 +5,14 @@ body{
 }
 
 header{
-    background-color: #1e6900;
+    background-color: #cf5209;
     color: white;
     padding: 20px;
     text-align: center;
 }
 
 nav{
-    background-color: #b6a50a;
+    background-color: #555;
     color: white;
     padding: 10px;
     display: flex;
@@ -37,7 +37,7 @@ main{
 }
 
 section{
-    background-color: white;
+    background-color: rgb(223, 223, 223);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rrba(0,0,0,0.1);
