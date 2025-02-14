@@ -1,32 +1,32 @@
 body{
     font-family: Arial, sans-serif;
-    margin: 0; padding: o;
-    background-color: #FFDEC5;
+    margin: 0; padding: 0;
+    background-color: #794141;
 }
 
 header{
-    background-color: #c55a5a;
+    background-color: #4c834a;
     color: rgb(255, 255, 255);
     padding: 20px;
     text-align: center;
 }
 
 nav{
-    background-color: #c79494;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     padding: 10px;
     display: flex;
     justify-content: center;
 }
 
-nav a{color: white;
+nav a{color: rgb(0, 0, 0);
     text-decoration: none;
     padding: 10px 20px; margin: 0 10px;
     border-radius: 5px;
 }
 
 nav a:hover{
-    background-color: #b17d7d;
+    background-color: #a2a3a2;
 }
 
 
@@ -38,7 +38,7 @@ main{
 
 section{
     color: rgb(0, 0, 0);
-    background-color: #ebcdb600;
+    background-color: #c98e8c;
     padding: 20px;
     border-radius: 8px;
     width: 48%;
@@ -46,95 +46,13 @@ section{
 
 footer{
     
-    background-color: #333;
+    background-color: #555555;
     color: white;
     text-align: center;
     padding: 10px; margin-top: 20px;
 }
 
-.container {
-    display: flex;
-    align-items: center; /* Alinha verticalmente */
-    gap: 15px; /* Espaço entre a imagem e o texto */
-}
-
-.cardapio {
-    display: flex;
-    align-items: right; /* Alinha verticalmente */
-    gap: 15px; /* Espaço entre a imagem e o texto */
-}
-
 .imagem {
-    width: 600px; /* Ajuste o tamanho da imagem */
+    width: 300px; /* Ajuste o tamanho da imagem */
     height: auto;
-}
-
-.imagem1 {
-    width: 200px; /* Ajuste o tamanho da imagem */
-    height: auto;
-}
-
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-/* Estilo do título */
-h1 {
-    text-align: center;
-    margin: 20px 0;
-    font-size: 28px;
-    color: #333;
-}
-
-
-.cardapio {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-}
-
-/* Estilo de cada item do cardápio */
-.item {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    width: 250px;
-    text-align: center;
-}
-
-/* Imagens do cardápio */
-.item img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-/* Nome do prato */
-.item h2 {
-    font-size: 20px;
-    margin: 10px 0;
-    color: #444;
-}
-
-/* Descrição do prato */
-.item p {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 10px;
-}
-
-/* Preço */
-.preco {
-    display: block;
-    font-size: 18px;
-    color: #d35400;
-    font-weight: bold;
-    margin-top: 5px;
 }
