@@ -37,8 +37,6 @@ main{
 }
 
 section{
-    /* display: block;
-    flex-wrap: wrap; */
     color: rgb(0, 0, 0);
     background-color: #ebcdb600;
     padding: 20px;
@@ -60,19 +58,83 @@ footer{
     gap: 15px; /* Espaço entre a imagem e o texto */
 }
 
+.cardapio {
+    display: flex;
+    align-items: right; /* Alinha verticalmente */
+    gap: 15px; /* Espaço entre a imagem e o texto */
+}
+
 .imagem {
     width: 600px; /* Ajuste o tamanho da imagem */
     height: auto;
 }
 
-.texto-laranja{
-    color: #e74c3c; font-weight: bold;
+.imagem1 {
+    width: 200px; /* Ajuste o tamanho da imagem */
+    height: auto;
 }
 
-.caixa-verde {
-    display: inline-block;
-    padding: 10px;margin: top 10px;
-    background-color: #2ecc71;
-    color: white;
-    border-radius: 5px;
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo do título */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 28px;
+    color: #333;
+}
+
+
+.cardapio {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilo de cada item do cardápio */
+.item {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+}
+
+/* Imagens do cardápio */
+.item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Nome do prato */
+.item h2 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #444;
+}
+
+/* Descrição do prato */
+.item p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Preço */
+.preco {
+    display: block;
+    font-size: 18px;
+    color: #d35400;
+    font-weight: bold;
+    margin-top: 5px;
 }
