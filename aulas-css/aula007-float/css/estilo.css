@@ -1,62 +1,66 @@
-body{
-    font-family: Arial,sans-serif;
-    background-color: #f4f4f4;
+/*Reset básico*/
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-#cabecalho{
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-#rodape{
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    position: fixed;
-    bottom:0;
-    width: 100%;
-}
-
-.caixa{
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 20px;
+    background-color: #f4f4f4;
+}
+
+/*Estilo do cabeçalho*/
+header {
+    text-align: center;
+    background: #0073e6;
+    color: white;
     padding: 20px;
-    background-color: #fff;
-}
-
-.borda-solida{
-    border:5px solid green;
-}
-
-.borda-pontilhada{
-    border:5px dotted red;
-}
-
-.borda-tracejada{
-    border:5px dashed blue;
-}
-
-.borda-dupla{
-    border:5px double purple;
-}
-
-.com-padding-e-margem{
-    margin: 30px;
-    padding: 20px;
-    border:2px solid #333;
-}
-
-#exemplo-padding-margin .caixa{
-    margin: 10px;
-    margin-right: 15px;
     margin-bottom: 20px;
-    margin-left: 25px;
-    margin-top: 10px;
+}
+
+/*Estilo das seções*/
+section {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/*Float left*/
+.float-left img {
+    float: left;
     margin-right: 15px;
-    margin-bottom: 20px;
-    margin-left: 25px;
+    width: 80px;
+    height: 80px;
+}
+
+/*Float rigth*/
+.float-right img {
+    float: right;
+    margin-left: 15px;
+    width: 80px;
+    height: 80px;
+}
+
+/*Clear para evitar sobreposição*/
+.clear {
+    clear: both;
+}
+
+/*Sem float*/
+.flost-none {
+    text-align: center;
+}
+
+/*Rodapé*/
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
 }
