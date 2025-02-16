@@ -1,61 +1,121 @@
-body{
+body {
     font-family: Arial, sans-serif;
     margin: 0; padding: 0;
     background-color: #e6e6e6;
 }
 
-header{
+header {
     background-color: #4c834a;
     color: rgb(255, 255, 255);
     padding: 20px;
     text-align: center;
 }
 
-nav{
+nav {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     padding: 10px;
     display: flex;
     justify-content: center;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.363);
 }
 
-nav a{color: rgb(0, 0, 0);
+nav a {
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    padding: 10px 20px; margin: 0 10px;
+    padding: 10px 20px;
+    margin: 0 10px;
     border-radius: 5px;
 }
 
-nav a:hover{
+nav a:hover {
     background-color: #d8d8d8;
 }
 
-
-main{
-    flex-direction: row;
-    justify-content: space-between;
+main {
     margin: 20px;
 }
 
-section{
-    color: rgb(0, 0, 0);
-    background-color: #c9c9c9;
-    padding: 20px;
-    border-radius: 8px;
-    width: 48%;
+section {
+    text-align: center;
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
 }
 
-footer{
-    
+
+footer {
     background-color: #a33636;
     color: white;
     text-align: center;
-    padding: 10px; margin-top: 20px;
+    padding: 10px;
+    margin-top: 20px;
 }
 
+/* Ajustando as imagens */
 .imagem {
-    width: 256px; /* Ajuste o tamanho da imagem */
-    height: 350px;
-    float: center; /* Faz a imagem flutuar à esquerda */
+    float: center;
+    margin: 33px;
+    width: 256px;
+    height: auto;
+}
+
+/*==========================INICIO==========================  */
+
+/* Ajustando o início */
+#Inicio {
+    text-align: center;
+    margin: auto;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/*==========================VOLTAR PRO TOPO==========================  */
+.btn-voltar {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px 15px;
+    background-color: #c9c9c9;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 5px;
+    width: 150px;
+    font-weight: bold;
+}
+
+.btn-voltar:hover {
+    background-color: #aaaaaa;
+}
+
+/*==========================RECEITAS==========================  */
+.texto-receita{
+    text-align: left;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.imagem-receita{
+    float: right;
+    margin: 20px;
+    width: 350px;
+    height: auto;
+}
+
+/*==========================SOBRE NÓS==========================  */
+#Sobre_Nós{
+    text-align: left;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/*==========================INFORMAÇÕES==========================  */
+#Informacoes {
+    text-align: left;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
 }
