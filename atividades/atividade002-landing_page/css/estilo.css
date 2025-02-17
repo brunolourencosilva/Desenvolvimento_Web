@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0; padding: 0;
@@ -5,18 +11,24 @@ body {
 }
 
 header {
-    background-color: #4c834a;
+    background-color: #4b8049;
     color: rgb(255, 255, 255);
     padding: 20px;
     text-align: center;
+    font-weight: bold;
 }
 
+header h1 {
+    font-family: 'Italiana';
+    font-size: 3.5em;
+}
+
+
 nav {
+    text-align: center;
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     padding: 10px;
-    display: flex;
-    justify-content: center;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.363);
 }
 
@@ -52,7 +64,10 @@ footer {
     padding: 10px;
     margin-top: 20px;
 }
-
+.font-1{
+    font-family: 'Italiana';
+    font-size: 2.5em;
+}
 /* Ajustando as imagens */
 .imagem {
     float: center;
@@ -61,6 +76,12 @@ footer {
     height: auto;
 }
 
+.container{
+    float: center;
+    margin: 33px;
+    width: 256px;
+    height: auto;
+}
 /*==========================INICIO==========================  */
 
 /* Ajustando o início */
@@ -74,7 +95,6 @@ footer {
 
 /*==========================VOLTAR PRO TOPO==========================  */
 .btn-voltar {
-    display: block;
     text-align: center;
     margin: 20px auto;
     padding: 10px 15px;
@@ -100,7 +120,7 @@ footer {
 .imagem-receita{
     float: right;
     margin: 20px;
-    width: 350px;
+    width: 390px;
     height: auto;
 }
 
@@ -118,4 +138,8 @@ footer {
     padding: 20px;
     margin: 10px 0;
     border-radius: 5px;
+}
+
+.clear{
+    clear: both;
 }
