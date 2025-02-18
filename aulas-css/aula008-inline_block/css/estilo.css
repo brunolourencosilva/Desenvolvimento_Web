@@ -1,0 +1,29 @@
+.container {
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid#ddd;
+}
+
+.block {
+    display: block;
+    width: 100%;
+    background-color: lightblue;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.inline{
+    display: inline;
+    background-color: lightgreen;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.inline-block{
+    display: inline-block;
+    background-color: lightcoral;
+    padding: 10px;
+    margin-right: 10px;
+}
