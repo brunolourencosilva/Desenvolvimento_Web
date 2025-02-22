@@ -61,6 +61,15 @@ section {
     border-radius: 5px;
 }
 
+article{
+    text-align: center;
+    background: rgba(0, 0, 0, 0);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 0px;
+    text-decoration: none;
+}
+
 
 .font-1{
     font-family: 'Italiana';
@@ -90,6 +99,13 @@ section {
     margin: auto;
 }
 
+.container-info{
+    background-color: #ffffff00;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os artigos quebrem de linha */
+    justify-content: center;
+}
+
 /*==========================VOLTAR PRO TOPO==========================  */
 .btn-voltar {
     text-align: center;
@@ -108,7 +124,7 @@ section {
 }
 
 /*==========================RECEITAS==========================  */
-.texto-receita{
+.texto-receita {
     float: left;
     font-size: 1.5em;
     text-align: left;
@@ -118,7 +134,7 @@ section {
     
 }
 
-.imagem-receita{
+.imagem-receita {
     float: right;
     margin: 40px;
     width: 390px;
@@ -126,7 +142,7 @@ section {
 }
 
 /*==========================SOBRE NÓS==========================  */
-#Sobre_Nós{
+#Sobre_Nós {
     font-size: 1.5em;
     text-align: left;
     padding: 20px;
@@ -135,13 +151,6 @@ section {
 }
 
 /*==========================INFORMAÇÕES==========================  */
-#Informacoes {
-    background-color: #ffffff00;
-    font-size: 1.5em;
-    padding: 20px;
-    margin: 10px 0;
-    border-radius: 5px;
-}
 
 .clear{
     clear: both;
@@ -150,6 +159,6 @@ footer {
     background-color: #a33636;
     color: white;
     text-align: center;
-    padding: 30px;
+    padding: 1px;
     margin-top: 20px;
 }
