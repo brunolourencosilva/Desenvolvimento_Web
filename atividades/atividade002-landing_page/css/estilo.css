@@ -62,7 +62,7 @@ section {
 }
 
 article{
-    text-align: center;
+    text-align: left;
     background: rgba(0, 0, 0, 0);
     padding: 15px;
     margin: 10px 0;
@@ -70,6 +70,7 @@ article{
     text-decoration: none;
 }
 
+/*========================== FONTES==========================  */
 
 .font-1{
     font-family: 'Italiana';
@@ -93,38 +94,38 @@ article{
     width: 256px;
     height: auto;
 }
-
+/*========================== CONTAINERS ==========================  */
 .container{
     width: 70%;
     margin: auto;
 }
 
-.container-info{
+.container-info{ /*container da parte de informação */
     background-color: #ffffff00;
     display: flex;
     flex-wrap: wrap; /* Permite que os artigos quebrem de linha */
     justify-content: center;
 }
 
-/*==========================VOLTAR PRO TOPO==========================  */
-.btn-voltar {
-    text-align: center;
-    margin: 20px auto;
-    padding: 10px 15px;
-    background-color: #c9c9c9;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    border-radius: 5px;
-    width: 150px;
-    font-weight: bold;
-}
+/*========================== VOLTAR PRO TOPO ==========================  */
 
+.btn-voltar{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
 .btn-voltar:hover {
-    background-color: #aaaaaa;
+    background-color: #6d6d6d;
 }
 
 /*==========================RECEITAS==========================  */
-.texto-receita {
+.texto-receita-left {
     float: left;
     font-size: 1.5em;
     text-align: left;
@@ -134,13 +135,29 @@ article{
     
 }
 
-.imagem-receita {
+.texto-receita-right {
     float: right;
+    font-size: 1.5em;
+    text-align: left;
+    max-width: 600px;
+    padding: 20px;
+    margin: 40px;
+    
+}
+
+.imagem-receita-left {
+    float: left;
     margin: 40px;
     width: 390px;
     height: auto;
 }
 
+.imagem-receita-right {
+    float: right;
+    margin: 40px;
+    width: 390px;
+    height: auto;
+}
 /*==========================SOBRE NÓS==========================  */
 #Sobre_Nós {
     font-size: 1.5em;
@@ -149,8 +166,6 @@ article{
     margin: 10px 0;
     border-radius: 5px;
 }
-
-/*==========================INFORMAÇÕES==========================  */
 
 .clear{
     clear: both;
