@@ -16,11 +16,15 @@ header {
     padding: 20px;
     text-align: center;
     font-weight: bold;
+    height: 400px;
+    justify-content: center;
+    align-items:center;
 }
 
 header h1 {
+    margin: 120px;
     font-family: 'Italiana';
-    font-size: 3.5em;
+    font-size: 6em;
 }
 
 
@@ -33,6 +37,7 @@ nav {
 }
 
 nav a {
+    font-size: 1.5em;
     color: rgb(0, 0, 0);
     text-decoration: none;
     padding: 10px 20px;
@@ -57,16 +62,19 @@ section {
 }
 
 
-footer {
-    background-color: #a33636;
-    color: white;
-    text-align: center;
-    padding: 30px;
-    margin-top: 20px;
-}
 .font-1{
     font-family: 'Italiana';
     font-size: 2.5em;
+}
+/*==========================INICIO==========================  */
+
+/* Ajustando o início */
+#Inicio {
+    text-align: center;
+    margin: auto;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 /* Ajustando as imagens */
@@ -78,20 +86,8 @@ footer {
 }
 
 .container{
-    float: center;
-    margin: 33px;
-    width: 256px;
-    height: auto;
-}
-/*==========================INICIO==========================  */
-
-/* Ajustando o início */
-#Inicio {
-    text-align: center;
+    width: 70%;
     margin: auto;
-    max-width: 600px;
-    padding: 20px;
-    border-radius: 10px;
 }
 
 /*==========================VOLTAR PRO TOPO==========================  */
@@ -113,20 +109,25 @@ footer {
 
 /*==========================RECEITAS==========================  */
 .texto-receita{
+    float: left;
+    font-size: 1.5em;
     text-align: left;
     max-width: 600px;
     padding: 20px;
+    margin: 40px;
+    
 }
 
 .imagem-receita{
     float: right;
-    margin: 20px;
+    margin: 40px;
     width: 390px;
     height: auto;
 }
 
 /*==========================SOBRE NÓS==========================  */
 #Sobre_Nós{
+    font-size: 1.5em;
     text-align: left;
     padding: 20px;
     margin: 10px 0;
@@ -135,7 +136,8 @@ footer {
 
 /*==========================INFORMAÇÕES==========================  */
 #Informacoes {
-    text-align: left;
+    background-color: #ffffff00;
+    font-size: 1.5em;
     padding: 20px;
     margin: 10px 0;
     border-radius: 5px;
@@ -143,4 +145,11 @@ footer {
 
 .clear{
     clear: both;
+}
+footer {
+    background-color: #a33636;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 20px;
 }
