@@ -103,7 +103,7 @@ article{
 .container-info{ /*container da parte de informação */
     background-color: #ffffff00;
     display: flex;
-    flex-wrap: wrap; /* Permite que os artigos quebrem de linha */
+    flex-wrap: wrap;
     justify-content: center;
 }
 
