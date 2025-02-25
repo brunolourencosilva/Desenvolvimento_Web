@@ -76,13 +76,39 @@ article{
     text-decoration: none;
 }
 
-/*========================== FONTES==========================  */
+/*========================== FONTES ==========================  */
 
 .font-1{
     font-family: 'Italiana';
     font-size: 2.5em;
 }
 
+/*========================== NAVEGAÇÃO ==========================  */
+
+.menu-hover ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.menu-hover li {
+    margin-right: 20px;
+}
+
+.menu-hover a{
+    text-decoration: none;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    display: block;
+}
+
+.menu-hover a:hover{
+    background-color: #d3d3d3;
+    transition: background-color 0.3s;
+}
 /*==========================INICIO==========================  */
 
 /* Ajustando o início */
@@ -131,6 +157,8 @@ article{
 .btn-voltar:hover {
     background-color: #6d6d6d;
 }
+
+/*========================== BORDA ==========================  */
 
 .borda-solida {
     border: 5px solid black; /* Define uma borda preta de 5px */
