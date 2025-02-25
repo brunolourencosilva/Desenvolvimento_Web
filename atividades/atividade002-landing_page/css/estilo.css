@@ -27,6 +27,12 @@ header h1 {
     font-size: 6em;
 }
 
+h2 {
+    margin: 20px;
+    font-family: 'Italiana';
+    font-size: 3.5rem;
+}
+
 
 nav {
     text-align: center;
@@ -76,6 +82,7 @@ article{
     font-family: 'Italiana';
     font-size: 2.5em;
 }
+
 /*==========================INICIO==========================  */
 
 /* Ajustando o início */
@@ -94,7 +101,9 @@ article{
     width: 256px;
     height: auto;
 }
+
 /*========================== CONTAINERS ==========================  */
+
 .container{
     width: 70%;
     margin: auto;
@@ -118,13 +127,18 @@ article{
     padding: 10px 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    
 }
 .btn-voltar:hover {
     background-color: #6d6d6d;
 }
 
+.borda-solida {
+    border: 5px solid black; /* Define uma borda preta de 5px */
+    display: inline-block; /* Faz a div se ajustar ao tamanho da imagem */
+  }
+
 /*==========================RECEITAS==========================  */
+
 .texto-receita-left {
     float: left;
     font-size: 1.5em;
@@ -132,7 +146,6 @@ article{
     max-width: 600px;
     padding: 20px;
     margin: 40px;
-    
 }
 
 .texto-receita-right {
@@ -142,27 +155,28 @@ article{
     max-width: 600px;
     padding: 20px;
     margin: 40px;
-    
 }
 
 .imagem-receita-left {
     float: left;
-    margin: 40px;
     width: 390px;
     height: auto;
+    border: #333;
 }
 
 .imagem-receita-right {
     float: right;
-    margin: 40px;
     width: 390px;
     height: auto;
 }
+
 /*==========================SOBRE NÓS==========================  */
+
 #Sobre_Nós {
     font-size: 1.5em;
     text-align: left;
-    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     margin: 10px 0;
     border-radius: 5px;
 }
@@ -174,6 +188,7 @@ footer {
     background-color: #a33636;
     color: white;
     text-align: center;
-    padding: 1px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     margin-top: 20px;
 }
