@@ -1,0 +1,36 @@
+header{
+    text-align: center;
+    background-color: #cc5200;
+    color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/*Etilo para os <articles> que são filhos diretos da <section>*/
+
+section > article{
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+/*estilo para <header> que é filho da <section>*/
+section > header{
+    text-align: center;
+    background-color: #0066cc;
+    color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/*estilo para o <footer> que é filho direto da <section>*/
+section > footer{
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+}
