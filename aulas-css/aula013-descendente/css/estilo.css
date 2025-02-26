@@ -1,0 +1,36 @@
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+article {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/*Estilo para os paragrafos dentro do artigo*/
+article p{
+    background-color: #e0f7fa;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/*estilo para o subtitulo especifico dentro do header*/
+article header .subtitulo{
+    font-style: italic;
+    color: #00796b;
+}
+
+/*estilo especifico para o titulo do artigo*/
+article heaer h1{
+    color:#004d40
+}
+
+div p{
+    background-color: #ff0000;
+}
