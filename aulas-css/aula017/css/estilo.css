@@ -1,0 +1,62 @@
+body{
+    font-family: Arial,sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+
+/*estiliza o container do formulario*/
+.formulario-container{
+    width: 50%;
+    margin: auto;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+/*Estilizando os rotulos dos inputs*/
+label{
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/*estiliza os campos de entrada de texto e email*/
+input[type="text"],
+input[type="email"],
+select,
+textarea{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/*estilizan os botões de radio e caixas de seleção em linha*/
+.grupo-radio,.grupo-checkbox{
+    text-align: left;
+    margin-top: 5px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    /*centraliza radios/checkbox com label*/
+    line-height: 2px;
+}
+
+button{
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #4caf50;
+}

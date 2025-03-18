@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo de estilização de formulario</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Estabecendo formulario</h1>
+    </header>
+
+    <main>
+      <section>
+        <article>
+          <div class="formulario-container">
+            <form>
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome" required/>
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required/>
+
+              <label for="cidade">Cidade:</label>
+              <select id="cidade" nome="cidade">
+                <option value="sp">São Paulo</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="mg">Minas Gerais</option>
+                <option value="pr">Parana</option>
+              </select>
+              
+              <label>Genero:</label>
+              <div class="grupo-radio">
+                <input type="radio" id="masculino" name="genero" value="masculino" />
+                <label for="masculino">Masculino</label>
+
+                <input type="radio" id="feminino" name="genero" value="feminino" />
+                <label for="feminino">Feminino</label>
+
+                <input type="radio" id="outro" name="genero" value="outro" />
+                <label for="outro">Outro</label>
+              </div>
+
+              <label>Interesses:</label>
+              <div class="grupo-checkbox">
+                <input type="checkbox" id="esportes" name="interesses" value="esportes">
+                <label for="esportes">Esportes</label>
+
+                <input type="checkbox" id="musica" name="interesses" value="musica">
+                <label for="musica">Musica</label>
+
+                <input type="checkbox" id="tecnologia" name="interesses" value="tecnologia">
+                <label for="tecnologia">Tecnologia</label>
+              </div>
+
+              <label for="mensagem">Mensagem:</label>
+              <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
