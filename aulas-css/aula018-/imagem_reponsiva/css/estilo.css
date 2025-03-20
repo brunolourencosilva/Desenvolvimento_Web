@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*Garante que padding e borda não afetam o
+    tamanho total do elementos*/
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Arial',sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+}
+
+/*estilo para o header com a imagem de fundo*/
+.principal {
+    /*URL da imagem de fundo*/
+    background-image: url('https://www.researchgate.net/publication/322235402/figure/fig2/AS:578845766057984@1515018993744/Figura-8-Registro-Panoramico-do-lixao-de-Cajazeiras-PB-Agosto-de-2017-Fonte-Livia.png');
+    /*faz a imagem cobrir todo o contaier*/
+    background-size: cover;
+    /*centraliza a imagem dentro do container*/
+    background-position: center;
+    /*garante que o header ocupe 100% da largura da tela*/
+    width: 100%;
+    /*altura fixada no header*/
+    height: 400px;
+    display: flex;
+    /*alinha o conteudo horizontalmente*/
+    justify-content: center;
+    /*alinha o conteudo verticalmente*/
+    align-items: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.conteudo-principal{
+    text-align: center;
+    padding: 20px;
+}
+
+.principal h1{
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.principal p{
+    font-size: 1.5em;
+}
+
+.sobre-nos{
+    padding: 40px;
+    text-align: center;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.sobre-nos h2{
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.sobre-nos p{
+    font-size: 2.5em;
+    color: #555;
+}
+
+.rodape{
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
