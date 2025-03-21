@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo de box_sizing</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Exemplo de uso do box-sizing</h1>
+      <p>Veja a diferença entre o uso de <code>box-sizing</code>:
+      <strong>content-box</strong> (padrão) e <strong> border-box</strong>.</p>
+    </header>
+
+    <section class="container">
+      <div class="caixa antes">
+        <h2>Antes de usar <code>box-sizing</code></h2>
+        <p>O tamanho da caixa é influiado pelo padding e pela borda.</p>
+      </div>
+      <div class="caixa depois">
+        <h2>Depois de usar <code>box-sizing: border-box</code></h2>
+        <p>O paddinge a borda não afetam o tamanho total da caixa.</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 - Exemplodidatico de <code>box-sizing</code></p>
+    </footer>
+  </body>
+</html>
