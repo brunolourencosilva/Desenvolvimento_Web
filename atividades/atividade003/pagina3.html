@@ -4,34 +4,109 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing page de culinária</title>
+    <title>Clientes - I-Desing</title>
     <link rel="stylesheet" href="css/estilo.css" />
   </head>
 
   <body>
     <a id="topo"></a>
     <header>
-      <h1>pagina 3</h1>
+      <h1>I-Desing</h1>
     </header>
+    
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="pagina1.html">Sobre</a></li>
         <li><a href="pagina2.html">Portfolio</a></li>
-        <li> <a href="pagina3.html">Cliente</a></li>
+        <li><a href="pagina3.html">Clientes</a></li>
         <li><a href="pagina4.html">Contato</a></li>
       </ul>
     </nav>
 
-    <main>
-      <section>
-        <h2>Bem vindo</h2>
-        <p>
-          Nossos projetos vão além do concreto e do aço — eles contam histórias,
-          abraçam a funcionalidade e respiram beleza. Explore, inspire-se e
-          descubra como podemos transformar suas ideias em realidade.
-        </p>
+    <main> 
+      <section class="container_branco">
+        <section class="texto_right">
+          <h2>Nossos Clientes</h2>
+          <article>
+            <p>
+              Trabalhamos com clientes visionários que confiam na nossa expertise para transformar ideias em projetos arquitetônicos inovadores.  
+              Seja para residências, edifícios comerciais ou espaços urbanos, buscamos sempre a excelência e a satisfação total dos nossos parceiros.
+            </p>
+          </article>
+        </section>
       </section>
+
+      <section class="container_cinza">
+        <section class="texto_left">
+          <h2>Depoimentos</h2>
+          <article class="testimonial">
+            <p>🌟 "Nosso novo escritório ficou incrível! A equipe do I-Desing captou perfeitamente o conceito que queríamos." - Ana Souza ⭐⭐⭐⭐⭐</p>
+          </article>
+          <article class="testimonial">
+            <p>🌟 "A casa dos meus sonhos se tornou realidade. Projeto impecável, sustentável e cheio de personalidade!" - Carlos Mendes ⭐⭐⭐⭐⭐</p>
+          </article>
+
+          <h1>Enviar comentario</h1>
+          <p>Nos mande um comentario falando sobre sua experiências e satisfação sobre nossa Empressa</p>
+
+          <form action="/enviar" method="post">
+            <label for="mensagem">Mensagem:</label>
+            <input type="text" id="nome" name="nome" required/>
+ 
+            <button type="submit">Enviar</button>
+          </form>
+        </section>
+      </section>
+
+      <section class="container_branco">
+        <h2>Clientes Atendidos</h2>
+        <table class="tabela-clientes">
+          <tr>
+            <th>Cliente</th>
+            <th>Tipo de Projeto</th>
+            <th>Localização</th>
+            <th>Ano</th>
+          </tr>
+          <tr>
+            <td>Maria Silva</td>
+            <td>Residencial</td>
+            <td>São Paulo, SP</td>
+            <td>2023</td>
+          </tr>
+          <tr>
+            <td>TechOffice Ltda.</td>
+            <td>Comercial</td>
+            <td>Rio de Janeiro, RJ</td>
+            <td>2022</td>
+          </tr>
+          <tr>
+            <td>GreenPark</td>
+            <td>Urbanismo</td>
+            <td>Curitiba, PR</td>
+            <td>2024</td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="container_cinza">
+        <section>
+          <h2>Empressas que nos contrataram</h2>
+
+            <img src="assets/projeto1.jpg" alt="Projeto 1" class="imagem-left">
+
+            <img src="assets/projeto2.jpg" alt="Projeto 2" class="imagem-left">
+
+            <img src="assets/projeto2.jpg" alt="Projeto 3" class="imagem-left">
+            
+            <img src="assets/projeto2.jpg" alt="Projeto 4" class="imagem-left">
+
+          </article>
+        </section>
+      </section>
+      <footer>
+        <p>&copy; 2025 Todos os direitos reservados para I-Desing</p>
+      </footer>
     </main>
   </body>
 </html>

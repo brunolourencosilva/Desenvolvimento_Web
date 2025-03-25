@@ -4,34 +4,63 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing page de culinária</title>
+    <title>Contato - I-Desing</title>
     <link rel="stylesheet" href="css/estilo.css" />
   </head>
 
   <body>
     <a id="topo"></a>
     <header>
-      <h1>pagina 4</h1>
+      <h1>I-Desing</h1>
     </header>
+    
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="pagina1.html">Sobre</a></li>
         <li><a href="pagina2.html">Portfolio</a></li>
-        <li> <a href="pagina3.html">Cliente</a></li>
+        <li><a href="pagina3.html">Clientes</a></li>
         <li><a href="pagina4.html">Contato</a></li>
       </ul>
     </nav>
 
     <main>
-      <section>
-        <h2>Bem vindo</h2>
-        <p>
-          Nossos projetos vão além do concreto e do aço — eles contam histórias,
-          abraçam a funcionalidade e respiram beleza. Explore, inspire-se e
-          descubra como podemos transformar suas ideias em realidade.
-        </p>
+      <section class="container_branco">
+        <h2>Fale Conosco</h2>
+        <p>Preencha o formulário abaixo e entraremos em contato o mais rápido possível.</p>
+
+        <form action="enviar.php" method="post">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required />
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone" required />
+
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+          <button type="submit" class="botao-cta">Enviar Mensagem</button>
+        </form>
       </section>
+
+      <section class="container_cinza">
+        <h2>Nossos Contatos</h2>
+        <p>Endereço: Rua dos Arquitetos, 123 - São Paulo, SP</p>
+        <p>Telefone: (11) 99999-9999</p>
+        <p>E-mail: contato@i-desing.com</p>
+
+        <h3>Nos Encontre no Mapa</h3>
+        <img src="assets\mapa.png" alt="predio" class="imagem-left">
+
+      </section>
+
+      <footer>
+        <p>&copy; 2025 Todos os direitos reservados para I-Desing</p>
+      </footer>
     </main>
   </body>
 </html>
+
