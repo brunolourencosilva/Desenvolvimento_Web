@@ -16,13 +16,13 @@ header {
     padding: 10px;
     text-align: center;
     font-weight: bold;
-    height: 200px;
+    height: 250px;
     justify-content: center;
     align-items:center;
 }
 
 header h1 {
-    margin: 40px;
+    margin: 60px;
     font-size: 6em;
 }
 
@@ -31,24 +31,62 @@ h2 {
     font-size: 3.5rem;
 }
 
-
-nav {
+section {
     text-align: center;
-    background-color: #394DFA;
-    color: rgb(255, 255, 255);
-    padding: 10px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.363);
-}
-
-nav a {
-    font-size: 1.5em;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    padding: 10px 20px;
-    margin: 0 10px;
+    background: rgba(255, 255, 255, 0);
+    padding: 15px;
+    margin: 10px 0;
     border-radius: 5px;
 }
 
-nav a:hover {
-    background-color: #6874e2;
+
+#inicio {
+    text-align: center;
+    margin: auto;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.font-1 {
+    font-size: 1.5rem;
+
+}
+/*========================== NAVEGAÇÃO ==========================  */
+
+/*Menu hover*/
+.menu-hover ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #2357a0;
+}
+
+.menu-hover li {
+    margin-right: 20px;
+}
+
+.menu-hover a{
+    text-decoration: none;
+    padding: 15px;
+    color: white;
+    display: block;
+}
+
+.menu-hover a:hover{
+    background-color: #4274bb;
+    transition: background-color 0.3s;
+}
+
+
+.img-logo {
+    float: left;
+    margin: 30px;
+    width: 150px;
+    height: auto;
+}
+
+.clear{
+    clear: both;
 }
