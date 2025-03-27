@@ -36,21 +36,16 @@ section {
     background: rgba(255, 255, 255, 0);
     padding: 15px;
     margin: 10px 0;
-    border-radius: 5px;
+}
+article{
+    text-align: left;
+    background: rgba(0, 0, 0, 0);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 0px;
+    text-decoration: none;
 }
 
-
-#inicio {
-    text-align: center;
-    margin: auto;
-    max-width: 600px;
-    padding: 20px;
-}
-
-.font-1 {
-    font-size: 1.5rem;
-
-}
 /*========================== NAVEGAÇÃO ==========================  */
 
 /*Menu hover*/
@@ -76,9 +71,61 @@ section {
 
 .menu-hover a:hover{
     background-color: #4274bb;
-    transition: background-color 0.3s;
+    transition: 0.3s;
 }
 
+#inicio {
+    text-align: center;
+    margin: auto;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.font-1 {
+    font-size: 1.5rem;
+
+}
+
+.texto_left{
+    float: left;
+    font-size: 1.5em;
+    text-align: left;
+    max-width: 600px;
+    padding: 20px;
+    margin: 40px;
+}
+
+/*========================== CONTAINERS ==========================  */
+
+.container_branco{
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+    width: 100%
+}
+.container_cinza{
+    background-color: #acacac;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+    width: 100%
+}
+/*========================== IMAGENS ==========================  */
+
+.imagem-left {
+    float: left;
+    width: 390px;
+    height: auto;
+}
+
+.imagem-right {
+    float: right;
+    width: 390px;
+    height: auto;
+}
 
 .img-logo {
     float: left;
