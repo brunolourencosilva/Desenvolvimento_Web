@@ -7,7 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0; padding: 0;
-    background-color: #e6e6e6;
+    background-color: #bbbbbb;
 }
 
 header {
@@ -78,7 +78,7 @@ article{
     text-align: center;
     margin: auto;
     max-width: 600px;
-    padding: 20px;
+    padding: 30px;
 }
 
 .font-1 {
@@ -86,44 +86,56 @@ article{
 
 }
 
+/*========================== TEXTO ==========================  */
+
 .texto_left{
     float: left;
     font-size: 1.5em;
     text-align: left;
-    max-width: 600px;
+    max-width: 500px;
+    padding: 20px;
+    margin: 40px;
+}
+
+.texto_right{
+    float: right;
+    font-size: 1.5em;
+    text-align: left;
+    max-width: 500px;
     padding: 20px;
     margin: 40px;
 }
 
 /*========================== CONTAINERS ==========================  */
 
-.container_branco{
+.container{
     background-color: #ffffff;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    width: 70%;
     padding: 30px;
-    width: 100%
+    margin: auto;
 }
-.container_cinza{
-    background-color: #acacac;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 30px;
-    width: 100%
+
+.form-container {
+    width: 100%;
+    margin: 40px auto;
+    padding: 20px;
+    background: #b9b9b9;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(49, 49, 49, 0.1);
+    text-align: center;
 }
+
 /*========================== IMAGENS ==========================  */
 
 .imagem-left {
     float: left;
-    width: 390px;
+    width: 300px;
     height: auto;
 }
 
 .imagem-right {
     float: right;
-    width: 390px;
+    width: 300px;
     height: auto;
 }
 
@@ -133,7 +145,33 @@ article{
     width: 150px;
     height: auto;
 }
+/*========================== VOLTAR PRO TOPO ==========================  */
+
+.btn-voltar{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.btn-voltar:hover {
+    background-color: #6d6d6d;
+}
+
+
 
 .clear{
     clear: both;
+}
+
+footer {
+    background-color: #2F7DEB;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 20px;
 }

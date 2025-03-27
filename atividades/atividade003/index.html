@@ -40,12 +40,9 @@
       </div>
       <div class="clear"></div>
 
-      <section class="container_branco">
+      <section class="container">
           <img src="assets\ferramentas-de-medicao-de-vista-superior-natureza-morta_23-2150440930.avif" 
           alt="ferramentas-de-medicao-de-vista-superior" class="imagem-right">
-
-        <div class="clear"></div>
-
         <section class="texto_left">
           <h2>Quem somos</h2>
           <p>
@@ -62,13 +59,11 @@
           </p>
         </section>
         <div class="clear"></div>
-      </section>
 
-      <section class="container_cinza">
           <img src="assets\pessoas-de-alto-angulo-trabalhando-no-laptop_23-2149721894.jpg" 
           alt="\pessoas-de-alto-angulo-trabalhando-no-laptop" class="imagem-left">
-
-        <section class="texto_left">
+          
+        <section class="texto_right">
           
           <h2>Serviços</h2>
             <article>
@@ -86,33 +81,31 @@
               </p>
             </article>
         </section>
-      </section>
+        <div class="clear"></div>
 
-      <section class="container_branco">
-        <h1>Formulario para contratar</h1>
-        <p>Solicite um orçamento sem compromisso e descubra como podemos ajudar!</p>
+        <section class="form-container">
+          <h1>Formulário para contratar</h1>
+          <p>Solicite um orçamento sem compromisso!</p>
+      
+          <form action="/enviar" method="post">
 
-        <form action="/enviar" method="post">
-          <label for="nome">Nome:</label>
-          <input type="text" id="nome" name="nome" required/>
-          <br/><br/>
+              <input type="text" name="nome" placeholder="Nome" required>
 
-          <label for="email">E-email:</label>
-          <input type="text" id="nome" name="nome" required/>
-          <br/><br/>
+              <input type="email" name="email" placeholder="E-mail" required>
 
-          <label for="mensagem">Mensagem:</label>
-          <input type="text" id="nome" name="nome" required/>
-          <br/><br/>
-
-          <button type="submit">Enviar</button>
-        </form>
+              <textarea name="mensagem" placeholder="Mensagem" required></textarea>
+              
+              <button type="submit">Enviar</button>
+          </form>
+        </section>
+        <div class="clear"></div>
       </section>
       <div class="clear"></div>
 
       <footer>
         <p>&copy;2025 Todos os direitos reservados para I-Desing</p>
       </footer>
+      <a href="#topo" class="btn-voltar">Voltar ao topo</a>
     </main>
   </body>
 </html>
