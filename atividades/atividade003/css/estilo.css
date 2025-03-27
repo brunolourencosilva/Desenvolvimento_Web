@@ -36,6 +36,7 @@ section {
     background: rgba(255, 255, 255, 0);
     padding: 15px;
     margin: 10px 0;
+    font-size: 1.2em;
 }
 article{
     text-align: left;
@@ -106,6 +107,12 @@ article{
     margin: 40px;
 }
 
+.info-projeto {
+    width: 60%;
+    padding: 35px;
+    text-align: left;
+}
+
 /*========================== CONTAINERS ==========================  */
 
 .container{
@@ -119,10 +126,20 @@ article{
     width: 100%;
     margin: 40px auto;
     padding: 20px;
-    background: #b9b9b9;
+    background: #d4d4d4;
     border-radius: 5px;
     box-shadow: 0px 4px 10px rgba(49, 49, 49, 0.1);
     text-align: center;
+}
+
+.container-projeto {
+    display: flex;
+    align-items: center;
+    background-color: #f3f3f3;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /*========================== IMAGENS ==========================  */
@@ -145,6 +162,14 @@ article{
     width: 150px;
     height: auto;
 }
+
+.imagem-projetos {
+    width: 40%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+}
+
 /*========================== VOLTAR PRO TOPO ==========================  */
 
 .btn-voltar{
