@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing page de culinária</title>
+    <title>Pagina I-desing</title>
     <link rel="stylesheet" href="css/estilo.css" />
   </head>
 
@@ -22,40 +22,44 @@
         <a href="pagina2.html">Portfolio</a>
         <a href="pagina3.html">Cliente</a>
         <a href="pagina4.html">Contato</a>
-      <ul>
+      </ul>
     </nav>
 
     <main>
-      <section class="container_branco">
-        <h2>Fale Conosco</h2>
-        <p>Preencha o formulário abaixo e entraremos em contato o mais rápido possível.</p>
 
-        <form action="enviar.php" method="post">
-          <label for="nome">Nome:</label>
-          <input type="text" id="nome" name="nome" required />
+      <div id="inicio">
+        <p class="font-1">
+          <br>
+        </p>
+      </div>
 
-          <label for="email">E-mail:</label>
-          <input type="email" id="email" name="email" required />
+      <section class="container">
+        <article class="form-container">
+          <h2>Fale Conosco</h2>
+          <p>Preencha o formulário abaixo e entraremos em contato o mais rápido possível.</p>
+        
+          <form action="/enviar" method="post">
+            <input type="text" name="nome" placeholder="Nome" required>
+            
+            <input type="email" name="email" placeholder="E-mail" required>
+            
+            <textarea name="mensagem" placeholder="Mensagem" required></textarea>
+            
+            <button type="submit">Enviar</button>
+          </form>
+        </article>
 
-          <label for="telefone">Telefone:</label>
-          <input type="tel" id="telefone" name="telefone" required />
 
-          <label for="mensagem">Mensagem:</label>
-          <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-
-          <button type="submit" class="botao-cta">Enviar Mensagem</button>
-        </form>
-      </section>
-
-      <section class="container_cinza">
-        <h2>Nossos Contatos</h2>
-        <p>Endereço: Rua dos Arquitetos, 123 - São Paulo, SP</p>
-        <p>Telefone: (11) 99999-9999</p>
-        <p>E-mail: contato@i-desing.com</p>
-
-        <h3>Nos Encontre no Mapa</h3>
+        <section class="texto_right">
+          <h2>Nossos Contatos</h2>
+          <ul>
+            <li>Endereço: Rua dos Arquitetos, 123 - São Paulo, SP</li>
+            <li>Telefone: (11) 99999-9999</li>
+            <li>E-mail: contato@i-desing.com</li>
+          </ul>
+        </section>
         <img src="assets\mapa.png" alt="predio" class="imagem-left">
-
+        <div class="clear"></div>
       </section>
 
       <footer>
