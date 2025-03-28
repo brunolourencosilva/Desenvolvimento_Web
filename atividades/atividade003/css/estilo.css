@@ -47,6 +47,18 @@ article{
     text-decoration: none;
 }
 
+/*Define o estilo da tabela*/
+table {
+    width: 80%;
+    /*Centraliza a tabela na pagina*/
+    margin: 20px auto;
+    /*Remove o espaçamento entre as bordas das celulas*/
+    border-collapse: collapse;
+    background-color: white;
+    /*ADICIONA SOMBRA Á TABELA*/
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
 /*========================== NAVEGAÇÃO ==========================  */
 
 /*Menu hover*/
@@ -120,6 +132,7 @@ article{
     width: 70%;
     padding: 30px;
     margin: auto;
+    border-radius: 5px;
 }
 
 .form-container {
@@ -135,13 +148,29 @@ article{
 .container-projeto {
     display: flex;
     align-items: center;
-    background-color: #f3f3f3;
+    background-color:rgb(226, 226, 226);
     padding: 20px;
     margin: 20px 0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.container-logo {
+    width: 70%;
+    padding: 10px 0;
+    margin: auto;
+    text-align: center;
+    background-color: #fffefe; /* Fundo levemente cinza para destaque */
+  }
+  
+  .container-comentarios {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #cfcde7;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
 /*========================== IMAGENS ==========================  */
 
 .imagem-left {
@@ -163,12 +192,42 @@ article{
     height: auto;
 }
 
+.img-cliente {
+    float: center;
+    margin: 30px;
+    width: 155px;
+    height: auto;
+}
+
 .imagem-projetos {
     width: 40%;
     max-width: 350px;
     height: auto;
     border-radius: 10px;
 }
+/*========================== TABELA ==========================  */
+
+.tabela-clientes {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .tabela-clientes th, .tabela-clientes td {
+    border: 1px solid #000000;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .tabela-clientes th {
+    background-color: #8f8f8f;
+    font-weight: bold;
+  }
+  
+  .tabela-clientes tr:nth-child(even) {
+    background-color: #dfdfdf;
+  }
+  
 
 /*========================== VOLTAR PRO TOPO ==========================  */
 
@@ -187,6 +246,71 @@ article{
 }
 
 
+/*========================== PARTE COMENTARIOS ==========================  */
+
+.comentario {
+display: flex;
+align-items: center;
+background: #e2e2e2;
+padding: 15px;
+border-radius: 8px;
+margin-bottom: 10px;
+}
+
+.avatar {
+width: 50px;
+height: 50px;
+border-radius: 50%;
+margin-right: 15px;
+}
+
+.conteudo {
+flex: 1;
+}
+
+.conteudo h3 {
+margin: 0;
+font-size: 16px;
+}
+
+.conteudo p {
+margin: 5px 0;
+font-size: 14px;
+color: #333;
+}
+
+.formulario-comentario {
+margin-top: 15px;
+}
+
+.formulario-comentario label {
+display: block;
+font-weight: bold;
+margin-top: 10px;
+}
+
+.formulario-comentario input,
+.formulario-comentario textarea {
+width: 100%;
+padding: 10px;
+border: 1px solid #ddd;
+border-radius: 5px;
+resize: vertical;
+}
+
+button {
+background: #007bff;
+color: white;
+border: none;
+padding: 10px 15px;
+cursor: pointer;
+border-radius: 5px;
+margin-top: 10px;
+}
+
+button:hover {
+background: #0056b3;
+}
 
 .clear{
     clear: both;

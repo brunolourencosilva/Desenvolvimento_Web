@@ -25,9 +25,15 @@
       <ul>
     </nav>
 
-    <main> 
-      <section class="container_branco">
-        <section class="texto_right">
+    <main>
+      <div id="inicio">
+        <p class="font-1">
+          <br>
+        </p>
+      </div>
+      <section class="container">
+        
+        <section>
           <h2>Nossos Clientes</h2>
           <article>
             <p>
@@ -36,78 +42,96 @@
             </p>
           </article>
         </section>
-      </section>
+        <div class="clear"></div>
 
-      <section class="container_cinza">
-        <section class="texto_left">
-          <h2>Depoimentos</h2>
-          <article class="testimonial">
-            <p>🌟 "Nosso novo escritório ficou incrível! A equipe do I-Desing captou perfeitamente o conceito que queríamos." - Ana Souza ⭐⭐⭐⭐⭐</p>
-          </article>
-          <article class="testimonial">
-            <p>🌟 "A casa dos meus sonhos se tornou realidade. Projeto impecável, sustentável e cheio de personalidade!" - Carlos Mendes ⭐⭐⭐⭐⭐</p>
-          </article>
-
-          <h1>Enviar comentario</h1>
-          <p>Nos mande um comentario falando sobre sua experiências e satisfação sobre nossa Empressa</p>
-
-          <form action="/enviar" method="post">
-            <label for="mensagem">Mensagem:</label>
-            <input type="text" id="nome" name="nome" required/>
- 
+        <section class="container-comentarios">
+          <h2>Comentários</h2>
+        
+          <div class="comentario">
+            <img src="assets\mulher.jpg" alt="Foto de Ana Souza" class="avatar">
+            <div class="conteudo">
+              <h3>Ana Souza</h3>
+              <p>Nosso novo escritório ficou incrível! A equipe do I-Desing captou perfeitamente o conceito que queríamos.</p>
+            </div>
+          </div>
+        
+          <div class="comentario">
+            <img src="assets\homem.jpg" alt="Foto de Carlos Mendes" class="avatar">
+            <div class="conteudo">
+              <h3>Carlos Mendes</h3>
+              <p>A casa dos meus sonhos se tornou realidade. Projeto impecável, sustentável e cheio de personalidade!</p>
+            </div>
+          </div>
+        
+          <h2>Deixe seu comentário</h2>
+          <p>Compartilhe sua experiência conosco.</p>
+        
+          <form action="/enviar" method="post" class="formulario-comentario">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+        
+            <label for="mensagem">Comentário:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+        
             <button type="submit">Enviar</button>
           </form>
         </section>
-      </section>
+        
+        
 
-      <section class="container_branco">
-        <h2>Clientes Atendidos</h2>
-        <table class="tabela-clientes">
-          <tr>
-            <th>Cliente</th>
-            <th>Tipo de Projeto</th>
-            <th>Localização</th>
-            <th>Ano</th>
-          </tr>
-          <tr>
-            <td>Maria Silva</td>
-            <td>Residencial</td>
-            <td>São Paulo, SP</td>
-            <td>2023</td>
-          </tr>
-          <tr>
-            <td>TechOffice Ltda.</td>
-            <td>Comercial</td>
-            <td>Rio de Janeiro, RJ</td>
-            <td>2022</td>
-          </tr>
-          <tr>
-            <td>GreenPark</td>
-            <td>Urbanismo</td>
-            <td>Curitiba, PR</td>
-            <td>2024</td>
-          </tr>
-        </table>
-      </section>
-
-      <section class="container_cinza">
         <section>
-          <h2>Empressas que nos contrataram</h2>
-
-            <img src="assets/projeto1.jpg" alt="Projeto 1" class="imagem-left">
-
-            <img src="assets/projeto2.jpg" alt="Projeto 2" class="imagem-left">
-
-            <img src="assets/projeto2.jpg" alt="Projeto 3" class="imagem-left">
-            
-            <img src="assets/projeto2.jpg" alt="Projeto 4" class="imagem-left">
-
-          </article>
+          <h2>Clientes Atendidos</h2>
+          <table class="tabela-clientes">
+            <thead>
+              <tr>
+                <th>Cliente</th>
+                <th>Tipo de Projeto</th>
+                <th>Localização</th>
+                <th>Ano</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Maria Silva</td>
+                <td>Residencial</td>
+                <td>São Paulo, SP</td>
+                <td>2023</td>
+              </tr>
+              <tr>
+                <td>TechOffice Ltda.</td>
+                <td>Comercial</td>
+                <td>Rio de Janeiro, RJ</td>
+                <td>2022</td>
+              </tr>
+              <tr>
+                <td>GreenPark</td>
+                <td>Urbanismo</td>
+                <td>Curitiba, PR</td>
+                <td>2024</td>
+              </tr>
+            </tbody>
+          </table>
         </section>
+        
       </section>
+      <div class="clear"></div>
+
+      <section class="container-logo">
+        <h2>Empressas parceiras</h2>
+
+          <img src="assets/carrefour-logo-0.png" alt="Projeto 1" class="img-cliente">
+
+          <img src="assets\cyrela-logo.png" alt="Projeto 2" class="img-cliente">
+
+          <img src="assets\mrv-logo.png" alt="Projeto 3" class="img-cliente">
+          
+          <img src="assets\multiplan-logo.png" alt="Projeto 4" class="img-cliente">
+
+      </section>
+        <div class="clear"></div>
       <footer>
         <p>&copy; 2025 Todos os direitos reservados para I-Desing</p>
-      </footer>
+      </footer>  
     </main>
   </body>
 </html>
