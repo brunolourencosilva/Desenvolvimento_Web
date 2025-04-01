@@ -8,19 +8,29 @@ body {
     font-family: Arial, sans-serif;
     margin: 0; padding: 0;
     background-color: #c0c0c0;
+    background-image: url('https://img.freepik.com/free-vector/futuristic-poster_53876-91312.jpg?t=st=1743545690~exp=1743549290~hmac=e8275c8776d84687bbb3b1b5db28ab9a71d19f86ed60d282d1d30f2ae3c08c7e&w=740');
+
+    background-size: cover;
+    background-position: center;
 }
 
 header {
+    /*URL da imagem de fundo*/
+    background-image: url('https://img.freepik.com/free-photo/compasses-sticky-notes-near-glasses-drafts_23-2147785568.jpg?t=st=1743544689~exp=1743548289~hmac=dad1ee099984afd616ff0eace470cee6c572213140c5713d98db0f9e5202c241&w=900');
+    /*faz a imagem cobrir todo o contaier*/
+    background-size: cover;
+    /*centraliza a imagem dentro do container*/
+    background-position: center;
     background-color: #2F7DEB;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     padding: 10px;
     text-align: center;
     font-weight: bold;
-    height: 250px;
+    height: 350px;
 }
 
 header h1 {
-    margin: 60px;
+    margin-top: 90px;
     font-size: 6em;
 }
 
@@ -55,7 +65,11 @@ table {
     /*ADICIONA SOMBRA Á TABELA*/
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
-
+/*centralizando os menus*/
+nav{
+    text-align: center;
+    font-size: 1.5rem;
+}
 /*========================== NAVEGAÇÃO ==========================  */
 
 /*Menu hover*/
@@ -127,7 +141,7 @@ table {
 
 .container{
     background-color: #ffffff;
-    width: 70%;
+    width: 60%;
     padding: 30px;
     margin: auto;
 }
@@ -152,7 +166,7 @@ table {
 }
 
 .container-logo {
-    width: 70%;
+    width: 60%;
     padding: 10px 0;
     margin: auto;
     text-align: center;
@@ -202,7 +216,6 @@ table {
     margin: 30px;
     width: 155px;
     height: auto;
-    border: 3px solid #000000;
 }
 
 .imagem-projetos {
