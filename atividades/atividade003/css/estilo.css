@@ -17,8 +17,6 @@ header {
     text-align: center;
     font-weight: bold;
     height: 250px;
-    justify-content: center;
-    align-items:center;
 }
 
 header h1 {
@@ -52,8 +50,7 @@ table {
     width: 80%;
     /*Centraliza a tabela na pagina*/
     margin: 20px auto;
-    /*Remove o espaçamento entre as bordas das celulas*/
-    border-collapse: collapse;
+
     background-color: white;
     /*ADICIONA SOMBRA Á TABELA*/
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
