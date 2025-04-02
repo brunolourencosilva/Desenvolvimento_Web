@@ -144,6 +144,8 @@ nav{
     width: 60%;
     padding: 60px;
     margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.26);
 }
@@ -205,13 +207,6 @@ nav{
     width: 450px;
     height: auto;
     border: 3px solid #000000;
-}
-
-.img-logo {
-    float: left;
-    margin: 30px;
-    width: 150px;
-    height: auto;
 }
 
 .img-cliente {
