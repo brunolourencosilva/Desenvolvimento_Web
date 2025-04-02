@@ -15,7 +15,7 @@ body {
 
 header {
     /*URL da imagem de fundo*/
-    background-image: url('https://img.freepik.com/free-photo/compasses-sticky-notes-near-glasses-drafts_23-2147785568.jpg?t=st=1743544689~exp=1743548289~hmac=dad1ee099984afd616ff0eace470cee6c572213140c5713d98db0f9e5202c241&w=900');
+    background-image: url('https://img.freepik.com/fotos-gratis/horizonte-da-cidade-de-nova-york-preto-e-branco_649448-1294.jpg?t=st=1743634301~exp=1743637901~hmac=129375a1bec1e93013fc1f1c962c360fa789534834bdb1895db2b0ac9a7ee4e8&w=1380');
     /*faz a imagem cobrir todo o contaier*/
     background-size: cover;
     /*centraliza a imagem dentro do container*/
@@ -90,7 +90,7 @@ nav{
 .menu-hover a{
     text-decoration: none;
     padding: 15px;
-    color: white;
+    color: rgb(255, 255, 255);
     display: block;
 }
 
