@@ -9,7 +9,6 @@ body {
     margin: 0; padding: 0;
     background-color: #c0c0c0;
     background-image: url('https://img.freepik.com/free-vector/futuristic-poster_53876-91312.jpg?t=st=1743545690~exp=1743549290~hmac=e8275c8776d84687bbb3b1b5db28ab9a71d19f86ed60d282d1d30f2ae3c08c7e&w=740');
-
     background-size: cover;
     background-position: center;
 }
@@ -31,7 +30,8 @@ header {
 
 header h1 {
     margin-top: 90px;
-    font-size: 6em;
+    font-size: 4em;
+    font-family: "Boldonse", system-ui;
 }
 
 h2 {
@@ -106,12 +106,12 @@ nav{
     padding: 30px;
 }
 
-.font-1 {
-    font-size: 1.5rem;
-
-}
 
 /*========================== TEXTO ==========================  */
+.font-1 {
+    font-family: "Luxurious Roman", serif;
+    font-size: 1.7rem;
+}
 
 .texto_left{
     float: left;
@@ -140,17 +140,19 @@ nav{
 /*========================== CONTAINERS ==========================  */
 
 .container{
-    background-color: #e7e7e7;
+    background-color: #cecece;
     width: 60%;
-    padding: 30px;
+    padding: 60px;
     margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.26);
 }
 
 .form-container {
     width: 92%;
     margin: 40px;
     padding: 20px;
-    background: #d4d4d4;
+    background: #ffffff;
     border-radius: 5px;
     text-align: center;
 }
@@ -158,7 +160,7 @@ nav{
 .container-projeto {
     display: flex;
     align-items: center;
-    background-color:rgb(226, 226, 226);
+    background-color:rgb(255, 255, 255);
     padding: 20px;
     margin: 20px 0;
     border-radius: 10px;
@@ -166,18 +168,19 @@ nav{
 }
 
 .container-logo {
-    width: 60%;
+    width: 100%;
     padding: 10px 0;
     margin: auto;
     text-align: center;
-    background-color: #fffefe;
+    background-color: #ffffff;
+    border-radius: 10px;
   }
   
   .container-comentarios {
     max-width: 600px;
     margin: auto;
     padding: 20px;
-    background: #cfcde7;
+    background: #5191f0;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
@@ -214,8 +217,9 @@ nav{
 .img-cliente {
     float: center;
     margin: 30px;
-    width: 155px;
+    width: 255px;
     height: auto;
+    
 }
 
 .imagem-projetos {
@@ -244,7 +248,7 @@ nav{
   }
   
   .tabela tr:nth-child(even) {
-    background-color: #dfdfdf;
+    background-color: #e9e9e9;
   }
   
 
@@ -268,67 +272,71 @@ nav{
 /*========================== PARTE COMENTARIOS ==========================  */
 
 .comentario {
-display: flex;
-align-items: center;
-background: #e2e2e2;
-padding: 15px;
-border-radius: 8px;
-margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    background: #e2e2e2;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 .avatar {
-width: 50px;
-height: 50px;
-border-radius: 50%;
-margin-right: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 1px solid #000000;
 }
 
 .conteudo {
-flex: 1;
+    flex: 1;
 }
 
 .conteudo h3 {
-margin: 0;
-font-size: 16px;
-}
+    margin: 0;
+    font-size: 16px;
+    }
 
 .conteudo p {
-margin: 5px 0;
-font-size: 14px;
-color: #333;
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
 }
 
 .formulario-comentario {
-margin-top: 15px;
+    margin-top: 15px;
+    
 }
 
 .formulario-comentario label {
-display: block;
-font-weight: bold;
-margin-top: 10px;
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    
 }
 
 .formulario-comentario input,
 .formulario-comentario textarea {
-width: 100%;
-padding: 10px;
-border: 1px solid #ddd;
-border-radius: 5px;
-resize: vertical;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    resize: vertical;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.301);
 }
 
 button {
-background: #007bff;
-color: white;
-border: none;
-padding: 10px 15px;
-cursor: pointer;
-border-radius: 5px;
-margin-top: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
 button:hover {
-background: #0056b3;
+    background: #0056b3;
 }
 
 .clear{
