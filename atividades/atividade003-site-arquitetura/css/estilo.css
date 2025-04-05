@@ -70,6 +70,34 @@ nav{
     text-align: center;
     font-size: 1.5rem;
 }
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.clear{
+    clear: both;
+}
+
+footer {
+    background-color: #2F7DEB;
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+}
+
 /*========================== NAVEGAÇÃO ==========================  */
 
 /*Menu hover*/
@@ -108,7 +136,7 @@ nav{
 
 
 /*========================== TEXTO ==========================  */
-.font-1 {
+#font-1 {
     font-family: "Luxurious Roman", serif;
     font-size: 1.7rem;
 }
@@ -117,8 +145,8 @@ nav{
     float: left;
     font-size: 1em;
     text-align: left;
-    max-width: 500px;
-    padding: 20px;
+    max-width: 585px;
+    padding-right: 1px;
     margin: 40px;
 }
 
@@ -126,8 +154,8 @@ nav{
     float: right;
     font-size: 1em;
     text-align: left;
-    max-width: 500px;
-    padding: 20px;
+    max-width: 585px;
+    padding-right: 1px;
     margin: 40px;
 }
 
@@ -164,7 +192,7 @@ nav{
     align-items: center;
     background-color:rgb(255, 255, 255);
     padding: 20px;
-    margin: 20px 0;
+    margin: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -190,23 +218,20 @@ nav{
 
 .imagem-left {
     float: left;
-    width: 300px;
+    width: 350px;
     height: auto;
-    border: 3px solid #000000;
 }
 
 .imagem-right {
     float: right;
-    width: 300px;
+    width: 350px;
     height: auto;
-    border: 3px solid #000000;
 }
 
-.imagem-center{
+#imagem-mapa{
     float: center;
-    width: 450px;
+    width: 428px;
     height: auto;
-    border: 3px solid #000000;
 }
 
 .img-cliente {
@@ -220,7 +245,7 @@ nav{
 .imagem-projetos {
     width: 40%;
     max-width: 350px;
-    height: auto;
+    height: 450px;
     border-radius: 10px;
 }
 /*========================== TABELA ==========================  */
@@ -280,7 +305,6 @@ nav{
     height: 50px;
     border-radius: 50%;
     margin-right: 15px;
-    border: 1px solid #000000;
 }
 
 .conteudo {
@@ -318,31 +342,4 @@ nav{
     border-radius: 5px;
     resize: vertical;
     box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.301);
-}
-
-button {
-    background: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-button:hover {
-    background: #0056b3;
-}
-
-.clear{
-    clear: both;
-}
-
-footer {
-    background-color: #2F7DEB;
-    color: white;
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 30px;
-    margin-top: 20px;
 }
