@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3: Bordas, Opacidade e Gradiente</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+
+  <body>
+    <header class="cabecalho">
+      <h1>Propriedades CSS3</h1>
+      <p>Explorando bordas, Opacidade e Gradiente</p>
+    </header>
+
+    <nav class="navegacao">
+      <ul>
+        <li><a href="#bordas">Bordas</a></li>
+        <li><a href="#opacidade">Opacidade</a></li>
+        <li><a href="#gradiente">Gradiente</a></li>
+      </ul>
+    </nav>
+
+    <main class="conteudo-principal">
+
+      <section id="bordas" class="secao">
+        <h2>Bordas em CSS3</h2>
+        <article>
+          <p>
+            CSS3 introduziu varias novas Propriedades para estilização de
+            bordas, permitindo maior controle e efeito visuais.
+          </p>
+
+          <div class="exemplo-borda borda-simples">
+            <h3> Borda simples</h3>
+            <code>border: 2px solid #333;</code>
+          </div>
+
+          <div class="exemplo-borda borda-arredondada">
+            <h3>Borda Arredondada</h3>
+            <code>border-radius: 15px;</code>
+          </div>
+
+          <div class="exemplo-borda borda-sombra">
+            <h3>Borda com sombra</h3>
+            <code>box-shadow: 5px 5px 10px rgba(0,0,0,0,0.3);</code>
+          </div>
+
+          <div class=" exemplo-borda borda-imagem">
+            <h3>Borda com imagem</h3>
+            <code>border-image: url(border.png) 30 round;</code>
+          </div>
+        </article>
+      </section>
+
+      <section id="opacidade" class="secao">
+        <h2>Opacidade em CSS3</h2>
+        <article>
+          <p>
+            A Propriedades opacity define a transparencia de um elemento
+            variando de  0 (tortalmente transparente) a 1(totalmente opaco).
+          </p>
+
+          <div class="exemplo-opacidade-container">
+            <div class=" exemplo-opacidade opacidade-1">1 (opaco)</div>
+            <div class=" exemplo-opacidade opacidade-08">0.8</div>
+            <div class=" exemplo-opacidade opacidade-06">0.6</div>
+            <div class=" exemplo-opacidade opacidade-04">0.4</div>
+            <div class=" exemplo-opacidade opacidade-02">0.2</div>
+            <div class=" exemplo-opacidade opacidade-0">0 (transparente)</div>
+          </div>
+
+          <div class="exemplo-opacidade-rgba">
+            <h3>Opacidade com RGBA</h3>
+            <p>
+              O RGBA permite definir opacidade apenas para a cor de fundo,
+              mantendo o conteudo legivel.
+            </p>
+            <div class="rgba-exemplo">
+              <p>Texto sobre fundo com opacidade</p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section id="gradiente" class="secao">
+        <h2>Gradiente em CSS3</h2>
+        <article>
+          <p>
+            gradiente permitem criar trnasições suaves entre duas ou mais cores especificasdas.
+          </p>
+
+          <div class="exemplo-gradiente gradiente-linear">
+            <h3>Gradiente linear</h3>
+            <code>background: linear-gradiente(to right, red, yellow);</code>
+          </div>
+
+          <div class="exemplo-gradiente gradiente-radial">
+            <h3>Gradiente radial</h3>
+            <code>background: radial-gradient(circle, red,yellow, green);</code>
+          </div>
+
+          <div class="exemplo-gradiente gradiente-angulo">
+            <h3>Gradiente com angulo</h3>
+            <code>background: linear-gradiente(45deg, red , orange);</code>
+          </div>
+
+          <div class="exemplo-gradiente gradiente-multiplo">
+            <h3>Multiplas cores</h3>
+            <code>background: linear-gradiente(to right, red, orange, yellow,green
+              ,blue,indigo,violet)</code>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="rodape">
+      <p>&copy;2025 - todos os direitos reservados</p>
+      <p>densenvolvido para fins didaticos</p>
+    </footer>
+  </body>
+</html>
