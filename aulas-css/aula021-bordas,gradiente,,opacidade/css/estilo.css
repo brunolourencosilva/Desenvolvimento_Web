@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans",sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    padding-bottom: 50px;
+}
+/*=========================== CABEÇALHO ===========================*/
+.cabecalho {
+    background: linear-gradient(135deg, #6e48aa 0%, #9d50bb 100%);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+}
+
+.cabecalho h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.cabecalho p{
+    font-weight: 300;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/*=========================== NAVEGAÇÃO ===========================*/
+
+.navegacao{
+    background-color: #333;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navegacao ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navegacao li{
+    margin: 0 1rem;
+}
+
+.navegacao a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.navegacao a:hover {
+    background-color: #9d50bb;
+    opacity: 0.8;
+}
+
+/*=========================== CONTEUDO PRINCIPAL ===========================*/
+
+.conteudo-principal {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/*=========================== SEÇÃO ===========================*/
+.secao{
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow:0 2px 10px rgba(0,0,0, 0.1);
+}
+
+.secao h2 {
+    color: #6e48aa;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+/*=========================== ESTILIZANDO BORDAS ===========================*/
+.exemplo-borda{
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.borda-simples {
+    border: 2px solid #333;
+}
+
+.borda-arrendondada{
+    border: 2px solid #6e48aa;
+    border-radius: 10px;
+}
+
+.borda-sombra{
+    border: 1px solid #ddd;
+    box-shadow:0 2px 10px rgba(0,0,0, 0.3);
+}
+
+.borda-imagem{
+    border: 15px solid transparent;
+    border-image: linear-gradient(45deg, #6e48aa, #9d50bb) 1;
+}
+
+/*=========================== ESTILIZANDO OPACIDADE ===========================*/
+.exemplo-opacidade-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.exemplo-opacidade{
+    width: 15%;
+    padding: 1rem 0.5rem;
+    background-color:#9d50bb;
+    color: white;
+    font-weight: bold;
+}
+
+.opacidade-1 {opacity: 1;}
+.opacidade-08 {opacity: 0.8;}
+.opacidade-06 {opacity: 0.6;}
+.opacidade-04 {opacity: 0.4;}
+.opacidade-02 {opacity: 0.2;}
+.opacidade-0 {opacity: 0;}
+
+.exemplo-opacidade-rgba{
+    margin: 2rem 0;
+}
+
+.rgba-exemplo {
+    padding: 2rem;
+    background-color: rgba(109, 72, 170, 0.5);
+    color: #333;
+    border-radius: 8px;
+}
+
+/*=========================== ESTILIZANDO GRADIENTE ===========================*/
+.exemplo-gradiente {
+    padding: 3rem 1rem;
+    margin: 1.5rem 0;
+    text-align: center;
+    color: #333;
+    border-radius: 8px;
+}
+
+.gradiente-linear{
+    background: linear-gradient(to right,#6e48aa,#9d50bb);
+}
+
+.gradiente-radial{
+    background: radial-gradient(circle,#6e48aa,#9d50bb,#4776E6);
+}
+
+.gradiente-angulo{
+    background: linear-gradient(45deg,#6e48aa,#4776E6);
+}
+
+.gradiente-multiplo{
+    background: linear-gradient(to right,
+    #6e48aa,
+    #8a4db3,
+    #9d50bb,
+    #b053c2,
+    #c256c9);
+}
+
+/*=========================== ESTILIZANDO RODAPE ===========================*/
+.rodape {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.rodape p{
+    margin-bottom: 0.5rem;
+    opacity: 0.8;
+}
+
+
+/*=========================== ESTILIZANDO CODE ===========================*/
+code{
+    font-family: 'Courier New',Courier, monospace;
+    background-color: #f0f0f0;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    border: 1px solid #ddd;
+}
+
+/*=========================== AJUSTE TELAS MENORES ===========================*/
+@media (max-width: 768px){
+    .navegacao ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navegacao li{
+        margin: 0.5rem 0;
+    }
+
+    .exemplo-opacidade-container{
+        flex-wrap: wrap;
+    }
+
+    .exemplo-opacidade{
+        width: 30%;
+        margin-bottom: 1rem;
+    }
+}
