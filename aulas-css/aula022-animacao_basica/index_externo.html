@@ -12,35 +12,34 @@
       align-items: center;
       height: 100vh;
       background-color: #f0f0f0;
+      font-family: Arial,sans-serif;
     }
 
-    .caixa {
-      width: 100px;
-      height: 100px;
+    .botao {
+      padding: 15px 30px;
       background-color: #3498db;
-      border-radius: 10px;
-      animation: moverEColorir 4s ease-in-out infinite alternate;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: all 0.3s ease;
     }
 
-    @keyframes moverEColorir {
-      0% {
-        transform: translateY(0);
-        background-color: #3498db;
-      }
+    .botao:hover{
+      background-color: #2980b9;
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
 
-      50% {
-        transform: translateY(-100px);
-        background-color: #e74c3c;
-      }
-
-      100% {
-        transform: translateY(0);
-        background-color: #2ecc71;
-      }
+    .botao:active{
+      transform: scale(
+        0.95
+      );
     }
   </style>
 </head>
 <body>
-  <div class="caixa"></div>
+  <button class="botao">Passe o Mouse</button>
 </body>
 </html>
