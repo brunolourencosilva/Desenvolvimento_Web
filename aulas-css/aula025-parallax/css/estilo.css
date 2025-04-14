@@ -1,0 +1,33 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial,sans-serif;
+}
+
+.parallax {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax1{
+    background-image: url("https://media.tenor.com/kMMK_FpjE2EAAAAM/mago-meme.gif");
+}
+
+.parallax2{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9ha5B9t83dxB-IRvXusJdMDwrbr2zDRSmAA&s");
+}
+
+.content{
+    height: 100vh;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
