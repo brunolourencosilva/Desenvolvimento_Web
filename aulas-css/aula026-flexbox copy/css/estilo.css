@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box; /* Todas as caixas, do mais humilde parágrafo ao mais altivo botão, respeitarão as medidas da borda para dentro — sem surpresas no tamanho. */
+    font-family: 'roboto';  /* Um toque moderno e minimalista — o Roboto, fonte de linhas limpas, impera como estilo de letra. */
+    font-weight: bold;      /* Tudo com peso, tudo com força. Cada letra brada sua presença com negrito no peito. */
+}
+
+body {
+    display: flex;              /* O corpo da página se ergue com flexibilidade, adaptando-se como bambu ao vento. */
+    min-height: 100vh;          /* Ao menos a altura da janela inteira — corpo alto, ereto, pronto para acolher o conteúdo. */
+    flex-direction: column;     /* Seus filhos — cabeçalho, conteúdo, rodapé — dispostos em coluna, um abaixo do outro. */
+    margin: 0;                  /* Sem margens, sem arestas — tudo começa do absoluto, do zero. */
+}
+
+main {
+    display: flex;  /* O coração da página se expande em flexbox — preparado para dividir espaço com harmonia. */
+    flex: 1;        /* Cresce e ocupa tudo o que pode dentro do corpo, como rio que preenche seu leito. */
+}
+
+main > article {
+    flex: 1;        /* O artigo toma espaço com liberdade, flexível e cheio de conteúdo. */
+    order: 1;       /* Mas se posiciona como primeiro entre os irmãos, honrando o conteúdo principal. */
+}
+
+main > nav,
+main > aside {
+    flex: 0 0 20vw;  /* A navegação e a barra lateral são rígidas — 20% da largura da janela, nem mais, nem menos. */
+}
+
+main > nav {
+    background: #d7e8d4;  /* Um verde claro, suave — como grama recém-molhada após a chuva. */
+    order: 3;             /* Apesar de estar à esquerda no código, ela vem por último na ordem visual. Um toque de rebeldia. */
+}
+
+main > aside {
+    background: beige;  /* Um bege caloroso, neutro como areia macia ao entardecer. */
+    order: 2;           /* Fica no meio, entre o conteúdo e a navegação. Equilíbrio é seu nome. */
+}
+
+header,
+footer {
+    background: rgb(242,116,6);  /* Um laranja flamejante — chama viva nos extremos da página, como o nascer e o pôr do sol. */
+    height: 20vh;                /* Altura generosa, 20% da janela — nem sombra, nem exagero. */
+}
+
+header,
+footer,
+article,
+nav,
+aside {
+    padding: 1em;  /* Um acolhimento interno: espaço para respirar, um abraço de 1em em cada direção. */
+}
