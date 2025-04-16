@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pagina I-desing</title>
+    <title>Pagina Pet Shop</title>
 
     <link rel="stylesheet" href="css/estilo.css" />
   </head>
@@ -13,18 +13,74 @@
     <a id="topo"></a>
 
     <header>
-        <h1>I-desing</h1>
+        <h1>PetZone</h1>
+        <p>Cuidando com carinho de quem te ama sem palavras</p>
     </header>
 
     <nav class="menu-hover">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="pagina1-sobre.html">Sobre</a></li>
-        <li><a href="pagina2-portfolio.html">Portfolio</a></li>
-        <li><a href="pagina3-cliente.html">Cliente</a></li>
-        <li><a href="pagina4-contato.html">Contato</a></li>
+        <li><a href="produtos.html">Produtos ▾</a></li>
+    
+        <li class="submenu">
+          <a href="servicos.html">Serviços ▾</a>
+          <ul class="dropdown">
+            <li><a href="banho-tosa.html">Banho e Tosa</a></li>
+            <li><a href="consulta.html">Consulta Veterinária</a></li>
+            <li><a href="vacinacao.html">Vacinação</a></li>
+            <li><a href="adestramento.html">Adestramento</a></li>
+          </ul>
+        </li>
+    
+        <li><a href="sobre.html">Quem somos</a></li>
+        <li><a href="dicas.html">Dicas</a></li>
+        <li><a href="contato.html">Contato</a></li>
       </ul>
     </nav>
+    
+    
     <div class="clear"></div>
 
-    <main>
+  <main class="conteudo-principal">
+
+    <section class="sobre">
+      <h2>Quem somos</h2>
+      <p>Há mais de 10 anos oferecendo cuidados de qualidade para pets de todos os tipos. Aqui, seu pet é parte da nossa família.</p>
+    </section>
+  
+    <!-- DESTAQUES DE PRODUTOS -->
+    <section class="produtos-destaque">
+      <h2>Produtos em destaque</h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>Rações</h3>
+          <img src="img/racao.jpg" alt="Ração para cães">
+        </div>
+
+        <div class="card">
+          <h3>Brinquedos</h3>
+          <img src="img/brinquedo.jpg" alt="Brinquedo para gatos">
+        </div>
+
+        <div class="card">
+          <h3>Higiene e Cuidados</h3>
+          <img src="img/higiene.jpg" alt="Produtos de higiene">
+        </div>
+
+      </div>
+    </section>
+
+    <aside class="barra-lateral">
+      <h3>Barra Lateral</h3>
+      <p>Coteudo adicional ou widgets aqui.</p>
+    </aside>
+
+  </main>
+  <footer class="rodape">
+    <p>&copy; 2023 Meu Site Flexbox</p>
+    <p>Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>
