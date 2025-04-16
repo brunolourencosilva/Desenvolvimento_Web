@@ -1,0 +1,136 @@
+/* Modulo 1: configuração basicas e reset*/
+
+/*reset basico para remover margens e paddings padrão*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial,sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header,nav,main,section,aside,footer{
+    padding: 20px;
+    border: 1px dashed #ccc;
+}
+
+.banner{
+    background-color: #4a6fa5;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+
+    min-height: 150px;
+}
+
+.navegacao{
+    background-color: #333;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navegacao a{
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    text-align: center;
+    transform: background-color 0.3s;
+}
+
+.navegacao a:hover{
+    background-color: #555;
+}
+
+.conteudo-principal{
+    display: flex;
+    flex:1;
+
+    flex-direction: row;
+}
+
+.area-conteudo{
+    background-color: #f4f4f4;
+    flex: 3;
+    min-height: 400px;
+}
+
+.barra-lateral{
+    background-color: #e4e4e4;
+    flex: 1;
+}
+
+.rodape{
+    background-color: #333;
+    color:white;
+    text-align: center;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px){
+    .conteudo-principal{
+        flex-direction: column;
+    }
+
+    .area-conteudo, .barra-lateral{
+        width: 100%;
+    }
+
+    .navegacao{
+        flex-direction: column;
+    }
+
+    .navegacao a{
+        border-bottom: 1px solid #555;
+    }
+}
+
+
+body > *{
+    padding: 20px;
+}
+
+.banner{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.barra-lateral{
+    border-left: 1px solid #ccc;
+}
+
+@media (max-width: 768px){
+    .barra-lateral{
+        border-left: none;
+        border-top: 1px solid #ccc;
+    }
+}
+
+.area-conteudo, .barra-lateral{
+    padding: 20px;
+}
+
+h1,h2,h3{
+    margin-bottom: 15px;
+}
+
+p{
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
