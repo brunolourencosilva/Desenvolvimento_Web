@@ -1,136 +1,163 @@
-/* Modulo 1: configuração basicas e reset*/
-
-/*reset basico para remover margens e paddings padrão*/
-
-*{
+/* modulo 1: configurações basicas o reset*/
+ 
+ /* Reset basico para remover margen e paddings padrao */
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: Arial,sans-serif;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+/* configuração do corpo do documento */
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh; /* Garente que o ody ocupe toda a altura da tela */
+    display: flex;/* ativa flexbox non body*/
+    flex-direction: column;/* organiza os filhos em coluna (header, main, footer) */
 }
 
-header,nav,main,section,aside,footer{
-    padding: 20px;
-    border: 1px dashed #ccc;
+/* header basico para todos as seções (apenas para visualização durante o desenvolvimento */
+header, nav, main, section, aside, footer {
+    padding: 28px;
+    border: 1px dashed #ccc; /* borda tracejada para viasualizaçao*/
 }
 
-.banner{
+/* modulo 2: estilização do banner */
+.banner {
     background-color: #4a6fa5;
     color: white;
-    padding: 40px 20px;
+    padding: 48px 28px;
     text-align: center;
 
+    /* Flexbox para alinhar conteudo verticalmente 9se houver multiplos alementos )*/
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items:center ;
+    justify-content: center /* alinha verticalmente */;
+    align-items: center; /* alinha horizontalmente */
 
     min-height: 150px;
 }
 
-.navegacao{
+/* modulo 3: estilização de navegaçao */
+
+.navegacao {
     background-color: #333;
 
+    /* flexblox para linhar as items da navegação horizontalmente*/
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: center; /* centraliza os items horizontalmente*/
+    flex-wrap: wrap; /* permite que os items querem para linha seguinte em telas pequenas*/
 }
 
-.navegacao a{
+/* estilo das linhas de navegação*/
+.navegacao a { 
     color: white;
     text-decoration: none;
     padding: 15px 20px;
     text-align: center;
-    transform: background-color 0.3s;
+    transition: background-color 0.3s;
 }
 
 .navegacao a:hover{
     background-color: #555;
 }
 
-.conteudo-principal{
+/* modulo 4: estilizacao do conteudo principal */
+.conteudo-principal {
+    /* Felxbox para organizar a area de conteudo e a barra lateral */
     display: flex;
-    flex:1;
+    flex: 1; /* faz com que o main ocupe todo o espçao disponivel entre header e footer */
 
+    /* layout padra: barra lateral a direita */
     flex-direction: row;
+
+    /* para telas pequenas, vamos andar para coluna (abaixo no modulo responsivo) */
 }
 
-.area-conteudo{
+.area-conteudo {
     background-color: #f4f4f4;
-    flex: 3;
+    flex: 3; /* ocuoa 3 partes do espaço disponel */
     min-height: 400px;
 }
 
-.barra-lateral{
+.barra-lateral {
     background-color: #e4e4e4;
     flex: 1;
 }
 
-.rodape{
+/* modulo 5: estilizaçao do rodape */
+
+.rodape { 
     background-color: #333;
-    color:white;
+    color: white ;
     text-align: center;
     padding: 20px;
 
+    /*flexbox para organizar multiplos elementos no rodape*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-@media (max-width: 768px){
-    .conteudo-principal{
-        flex-direction: column;
+/* modulo 6: adaptações para responsividade */
+
+@media (max-width: 768px ) {
+    /* quando a tela for menor ue 768px */
+
+    .conteudo-principal {
+        flex-direction: column; /* muda a direção para empilhar conteudo */
     }
 
-    .area-conteudo, .barra-lateral{
+    .area-conteudo, .barra-lateral {
+        /*flex: 1; ambas ocupam a mesma proporção */
         width: 100%;
     }
 
-    .navegacao{
-        flex-direction: column;
+    .navegacao {
+        flex-direction: column; /*empilha os links de navegacao */
     }
 
-    .navegacao a{
-        border-bottom: 1px solid #555;
+    .navegacao a {
+        border-bottom: 1px solid #555; /* adiciona divisao entre links */
     }
 }
 
+/* modulo 7: melhorias visuai detalhes */
 
-body > *{
+/* espçamento consistente */
+body > * {
     padding: 20px;
 }
 
-.banner{
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+/* sombra no banner para profundidade */
+.banner {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.barra-lateral{
+/* borda entre conteudo e barra lateral */
+.barra-lateral {
     border-left: 1px solid #ccc;
 }
 
-@media (max-width: 768px){
-    .barra-lateral{
+@media (max-width: 768px) {
+    .barra-lateral {
         border-left: none;
         border-top: 1px solid #ccc;
     }
 }
 
-.area-conteudo, .barra-lateral{
+/* espaçamento interno para os conteudos */
+.area-conteudo, .barra-lateral {
     padding: 20px;
 }
 
-h1,h2,h3{
+/* estilo para titulos */
+h1,h2,h3 {
     margin-bottom: 15px;
 }
 
-p{
+/* estilos para paragrafos */
+p {
     margin-bottom: 10px;
     line-height: 1.5;
 }
