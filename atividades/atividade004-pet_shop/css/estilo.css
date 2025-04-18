@@ -119,6 +119,15 @@ p {
     padding-bottom: 10px;
 }
 
+.imagem-aside {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 /*========================== CONTAINERS ==========================*/
 .sobre {
     background-color: #dcfbff;
@@ -144,7 +153,7 @@ p {
 
 .produtos {
     padding: 40px;
-    background-color: #f8fcff;
+    background-color: #ffffff;
   }
   
   .produtos h2 {
@@ -156,7 +165,7 @@ p {
 /*== cards ==*/
 .produtos {
     padding: 40px;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
   }
   
   .cards {
@@ -168,7 +177,7 @@ p {
   }
   
   .card {
-    background-color: #ffffff;
+    background-color: #f7f7f7;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 250px;
@@ -192,17 +201,16 @@ p {
     font-size: 0.95rem;
     color: #333;
   }
-  
 /*========================== LAYOUT FLEX ==========================*/
 .container-principal {
     display: flex;
     flex-direction: row;
-    background-color: #ffffff;
     justify-content: center;
     align-items: flex-start;
     gap: 2rem;
     padding: 20px;
-    flex-wrap: wrap; /* Adicionando wrap para permitir o empilhamento adequado quando necessário */
+    flex-wrap: wrap;
+    background-color: #ffffff;
 }
 
 .area-conteudo {
@@ -210,14 +218,18 @@ p {
 }
 
 .barra-lateral {
+    text-align: center;
     flex: 1;
-    background-color: #f5f5f5;
-    border-left: 1px solid #ccc;
+    background-color: #f5f5f500;
+    border-left: 4px solid #005b97;
     padding: 20px;
-    border-radius: 10px;
     position: sticky;
-    top: 100px; /* ou o valor que você quiser para não colar no topo */
+    top: 100px;
     height: fit-content;
+}
+.barra-lateral h3{
+    padding-top: 25px;
+    color: #ff0256;
 }
 
 /*========================== RESPONSIVO ==========================*/
@@ -257,5 +269,3 @@ p {
         width: 90%;
         }
 }
-
-
