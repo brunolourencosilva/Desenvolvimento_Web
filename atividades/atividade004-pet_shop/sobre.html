@@ -6,11 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pagina Pet Shop</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Nunito:wght@400;700&family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilo.css" />
   </head>
-
+  <!-- O projeto consiste no desenvolvimento de um site para uma Pet Shop, utilizando
+  Flexbox como principal recurso para organização e alinhamento dos elementos na
+  página. O layout deve ser responsivo e bem estruturado, demonstrando domínio
+  das técnicas de posicionamento com Flex. O site deverá conter obrigatoriamente
+  os seguintes elementos: estrutura semântica moderna, com destaque para a
+  utilização de um banner visual; menu de navegação em formato de lista; imagens
+  com links incorporados; uso de tabelas e formulários para exibição e coleta de
+  informações; aplicação de IDs e classes para controle de estilo, especialmente
+  na definição de fontes com tamanho e peso; além do uso apropriado de bordas,
+  padding (espaçamento interno) e margin (espaçamento externo). -->
   <body>
     <a id="topo"></a>
+
     <header class="banner">
       <h1>MegaPets</h1>
       <p>Os melhores produtos para os melhores pets</p>
@@ -19,25 +31,179 @@
     <nav class="menu-hover">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="produtos.html">Produtos</a></li>
+    
+        <li class="dropdown">
+          <a>Produtos</a>
+          <ul class="submenu">
+            <li><a href="cachorro.html">Cachorro</a></li>
+            <li><a href="gato.html">Gato</a></li>
+            <li><a href="peixe.html">Peixe</a></li>
+          </ul>
+        </li>
+    
         <li><a href="servicos.html">Serviços</a></li>
         <li><a href="sobre.html">Quem somos</a></li>
         <li><a href="dicas.html">Dicas</a></li>
         <li><a href="contato.html">Contato</a></li>
       </ul>
     </nav>
+    
     <div class="clear"></div>
 
-    <div class="clear"></div>
-    <aside class="barra-lateral">
-      <h3>Barra Lateral</h3>
-      <p>navegação da pagina</p>
-    </aside>
+    <main class="container-principal">
+      <div class="area-conteudo">
+        <img
+          src="assets\grupo-de-animais-de-estimacao-em-fundo-branco.jpg"
+          class="imagem-panoramica"
+          alt="grupo-de-animais-de-estimacao-em-fundo-branco"
+        />
+        <section class="sobre">
 
-  </main>
-  <footer class="rodape">
-    <p>&copy; 2023 Meu Site Flexbox</p>
-    <p>Todos os direitos reservados</p>
-  </footer>
-</body>
+          <div id="quem somos"></div>
+
+          <h2>Quem somos</h2>
+          <p class="texto-left">
+            No Amor & Cuidado Pet Shop, acreditamos que os animais de estimação
+            são mais do que companheiros — eles são família.<br>
+            <br>
+            Desde a nossa
+            fundação, temos o compromisso de oferecer produtos de qualidade,
+            serviços especializados e, acima de tudo, carinho em cada
+            atendimento.
+            Nossa equipe é formada por profissionais apaixonados
+            por animais, prontos para cuidar do seu pet com respeito, atenção e
+            muita dedicação.
+            Aqui, cada latido, miado ou chilreio é recebido com
+            amor.
+          </p>
+        </section>
+        <div class="clear"></div>
+      
+        <section class="produtos">
+
+          <div id="produtos-promoção"></div>
+
+          <h2>Produtos em promoção</h2>
+          <div class="cards">
+            <a href="cachorro.html"><div class="card">
+              <h3>Rações</h3>
+              <img src="assets\pacote-racao-especial-dog.webp" alt="Ração para cães" />
+              <p> <s>R$ 89,90</s><b> - R$ 65,90<br> 
+                Pacote 15kg</b><br>
+                Especial Dog – Premiun</p>
+            </div></a>
+
+            <a href="produtos.html"><div class="card">
+              <h3>Brinquedos</h3>
+              <img src="assets/mordedor-bola-corda.webp" alt="Brinquedo para cachorro" />
+              <p><s>R$ 19,90</s><b> - R$ 10,90</b><br>
+                Bite Max - Brinquedo mordedor<br>
+                Disponível em várias cores vibrantes</p>
+            </div></a>
+
+            <a href="produtos.html"><div class="card">
+              <h3>Higiene e Cuidados</h3>
+              <img src="assets\shampoo-sanol.webp" alt="Produtos de higiene" />
+              <p> <s>R$ 39,90</s><b> - R$25,90<br>
+                300ml - 500ml</b><br>
+                Sanol - Shampoo para filhotes<br></p>
+            </div></a>
+
+            <a href="produtos.html"><div class="card">
+              <h3>Conforto</h3>
+              <img src="assets\cama-de-cachorro-verde.webp" alt="Produtos de conforto" />
+              <p> <s>R$ 79,90</s><b> - R$55,90</b><br><br>
+                Dog Dreams<br>
+                Disponível em tamanhos P,M,G</p>
+            </div></a>
+
+          </div>
+          <div id="produtos-mais-vendidos"></div>
+          <h2>Produtos mais vendidos</h2>
+
+          <div class="cards">
+            <a href="cachorro.html"><div class="card">
+              <h3>Rações</h3>
+              <img src="assets\pacote-racao-royal.webp" alt="Ração para cães" />
+              <p><b>R$120,90 - 6kg</b><br><br>
+                Ração Royal - Gato Filhote<br>
+            </div></a>
+
+            <a href="produtos.html"><div class="card">
+              <h3>Brinquedos</h3>
+              <img src="assets\kong-brinquedo-morder.webp" alt="Brinquedo para gatos" />
+              <p><b>R$65,90</b><br><br>
+                KONG - Brinquedo mordedor<br>
+            </div></a>
+
+            <a href="produtos.html"><div class="card">
+              <h3>Higiene e Cuidados</h3>
+              <img src="assets\pasta-dente-Petsmile.jpg" alt="Produtos de higiene" />
+              <p><b>R$45,90 - 174g</b><br><br>
+                Pata de dente Petsmile<br>
+            </div></a>
+
+            <a href="produtos.html"><div class="card">
+              <h3>Conforto</h3>
+              <img src="assets\cama-bedsure.webp" alt="Produtos de conforto" />
+              <p><b>R$200,90</b><br><br>
+                Cama ortopedica Bedsure<br>
+                Disponível em tamanhos P,M,G</p>
+            </div></a>
+
+          </div>
+        </section>
+        <div class="clear"></div>
+      </div>
+      
+      
+      <aside class="barra-lateral">
+        <div>
+          <h3>Promoção Relampago!!</h3>
+          <img src="assets\catit-logo.png"class="imagem-aside" alt="logo-catit" />
+          <p>Todos os itens dessa marca estara com <b>20% de desconto</b><br>
+            Do dias 20/05 ate 15/06</p>
+          <hr>
+        </div>
+
+        <div>
+          <h3>Avisos!!</h3>
+          <img src="assets\cachorro-tomando-vacina.jpg"class="imagem-aside" alt="cachorro tomando vacina" />
+          <p>
+            Cuidar da saúde do seu pet é um ato de amor. <br><br>
+            Nossa <strong>Campanha de Vacinação</strong> começa dia <strong>22 de abril</strong> com 
+            vacinas essenciais por preço especial!
+          </p>
+          <ul style="margin-left: 20px; margin-bottom: 10px; color: #333; font-size: 0.9rem;">
+            <li>Raiva</li>
+            <li>Cinomose</li>
+            <li>Parvovirose</li>
+          </ul>
+          <p>
+            <em>Vagas limitadas — <a href="contato.html">Entre em contato conosco para marca um horario</a></em>
+          </p>
+          <hr>
+        </div>
+      </aside>
+
+      <!--================== Botão e menu deslizante ==================-->
+      <div class="botao-flutuante">
+        <input type="checkbox" id="toggle-menu" />
+        <label for="toggle-menu" class="btn">☰</label>
+
+        <div class="conteudo-deslizante">
+          <a href="#quem somos">Quem somos</a>
+          <a href="#produtos-promoção">Produtos promoção</a>
+          <a href="#produtos-mais-vendidos">Produtos mais vendidos</a>
+          <a href="#topo">Topo</a>
+        </div>
+      </div>
+
+
+    </main>
+    <footer class="rodape">
+      <p>&copy; 2023 Meu Site Flexbox</p>
+      <p>Todos os direitos reservados</p>
+    </footer>
+  </body>
 </html>
