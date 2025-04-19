@@ -202,6 +202,11 @@ font-size: 2.5rem;
 margin-bottom: 40px;
 }
 
+.produtos h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 40px;
+  }
 /*== cards ==*/
 .produtos {
     padding: 40px;
