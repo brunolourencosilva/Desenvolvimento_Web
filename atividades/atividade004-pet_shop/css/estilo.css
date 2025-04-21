@@ -536,7 +536,7 @@ footer {
 .container-principal {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between; /* Ajustei para que o conteúdo se distribua */
   align-items: flex-start;
   gap: 2rem;
   padding: 20px;
@@ -545,6 +545,7 @@ footer {
 
 .area-conteudo {
   flex: 3;
+  width: 100%; /* Garante que o conteúdo principal ocupe toda a largura */
 }
 
 .barra-lateral {
@@ -555,7 +556,9 @@ footer {
   padding: 20px;
   top: 100px;
   height: fit-content;
+  width: 100%; /* Garante que a barra lateral ocupe toda a largura disponível */
 }
+
 .barra-lateral h3 {
   font-size: 50px;
   color: #ff0256;
@@ -638,8 +641,6 @@ footer {
   animation: slideUp 0.3s ease forwards;
 }
 
-
-
 /*========================== RESPONSIVO ==========================*/
 /* Animação */
 @keyframes slideUp {
@@ -652,29 +653,8 @@ footer {
     transform: translateY(0);
   }
 }
+
 @media (max-width: 768px) {
-  /* Responsivo */
-  @media (max-width: 600px) {
-    .botao-flutuante {
-      bottom: 20px;
-      right: 20px;
-    }
-  
-    .botao-flutuante .btn {
-      width: 50px;
-      height: 50px;
-      font-size: 1.5rem;
-    }
-  
-    .conteudo-deslizante {
-      bottom: 80px;
-      right: 20px;
-    }
-  
-    .conteudo-deslizante a {
-      font-size: 1rem;
-    }
-  }
   .container-principal {
     flex-direction: column;
     align-items: center; /* Centraliza o conteúdo em telas menores */
@@ -685,11 +665,12 @@ footer {
     width: 100%; /* Garante que a área de conteúdo e o aside ocupem toda a largura */
     padding: 10px;
   }
-  
+
   .barra-lateral {
     border-left: none;
     border-top: 1px solid #ccc;
   }
+
   .sobre {
     width: 90%;
     padding: 15px;
@@ -724,6 +705,7 @@ footer {
     font-size: 0.95rem;
   }
 }
+
 @media (min-width: 768px) {
   .contato-conteudo {
     flex-direction: row;
@@ -734,4 +716,4 @@ footer {
   .mapa {
     width: 48%;
   }
-} 
+}
