@@ -46,7 +46,7 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
 
-  background-color: #2f3e8f;
+  background-color: #306377;
   color: white;
   text-align: center;
   padding-top: 30px;
@@ -80,7 +80,7 @@ button:hover {
   list-style: none;
   margin: 0;
   padding: 0;
-  background-color: #3daedb;
+  background-color: #306377;
   display: flex;
   position: relative;
   justify-content: center;
@@ -104,14 +104,14 @@ button:hover {
 
 /*========================== BANNER ==========================*/
 .banner {
-  background-color: #2f7deb;
-  color: rgb(34, 125, 245);
-  padding-top: 50px;
+  color: rgb(255, 238, 0);
   text-align: center;
   font-weight: bold;
+  padding-top: 50px;
+  padding-left: 800px;
   height: 550px;
 
-  background-image: url("https://img.freepik.com/fotos-gratis/cao-a-direita-e-copyspace_23-2147787373.jpg?t=st=1744847418~exp=1744851018~hmac=48c417e2a37fdd4e775ef2ef3ff091960e721cab5880e8cb63d78d691c1620da&w=1380");
+  background-image: url("../assets/cachorro-oculos.jpg");
   background-size: cover;
   background-position: center;
 
@@ -674,6 +674,9 @@ button:hover {
 }
 
 @media (max-width: 768px) {
+  .banner{
+    padding-left: 0px;
+  }
   .container-principal {
     flex-direction: column;
     align-items: center; /* Centraliza o conteúdo em telas menores */
