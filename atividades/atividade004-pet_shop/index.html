@@ -10,16 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilo.css" />
   </head>
-  <!-- O projeto consiste no desenvolvimento de um site para uma Pet Shop, utilizando
-  Flexbox como principal recurso para organização e alinhamento dos elementos na
-  página. O layout deve ser responsivo e bem estruturado, demonstrando domínio
-  das técnicas de posicionamento com Flex. O site deverá conter obrigatoriamente
-  os seguintes elementos: estrutura semântica moderna, com destaque para a
-  utilização de um banner visual; menu de navegação em formato de lista; imagens
-  com links incorporados; uso de tabelas e formulários para exibição e coleta de
-  informações; aplicação de IDs e classes para controle de estilo, especialmente
-  na definição de fontes com tamanho e peso; além do uso apropriado de bordas,
-  padding (espaçamento interno) e margin (espaçamento externo). -->
   <body>
     <a id="topo"></a>
 
@@ -73,82 +63,65 @@
         <section class="produtos">
 
           <div id="produtos-promoção"></div>
-
           <h2>Produtos em promoção</h2>
-          <div class="cards">
-            <a href="produtos.html">
-              <div class="card">
-                <h3>Rações</h3>
-                <img src="assets/pacote-racao-especial-dog.webp" alt="Ração para cães" />
-                <p><s>R$ 89,90</s><b> - R$ 65,90<br>Pacote 15kg</b><br>Especial Dog – Premium</p>
-              </div>
-            </a>
 
-            <a href="produtos.html">
-              <div class="card">
-                <h3>Brinquedos</h3>
-                <img src="assets/mordedor-bola-corda.webp" alt="Brinquedo para cachorro" />
-                <p><s>R$ 19,90</s><b> - R$ 10,90</b><br>Bite Max - Brinquedo mordedor<br>Disponível em várias cores vibrantes</p>
-              </div>
-            </a>
+            <div class="cards">
+                <div class="card">
+                  <img src="assets/pacote-racao-especial-dog.webp" class="imagem-produto" alt="Ração para cães" />
+                  <p><s>R$ 89,90</s><b> - R$ 65,90<br>Pacote 15kg</b><br>Especial Dog – Premium</p>
+                  <button>Compra</button>
+                </div>
 
-            <a href="produtos.html">
-              <div class="card">
-                <h3>Higiene e Cuidados</h3>
-                <img src="assets/shampoo-sanol.webp" alt="Produtos de higiene" />
-                <p><s>R$ 39,90</s><b> - R$25,90<br>300ml - 500ml</b><br>Sanol - Shampoo para filhotes</p>
-              </div>
-            </a>
+                <div class="card">
+                  <img src="assets/mordedor-bola-corda.webp" class="imagem-produto" alt="Brinquedo para cachorro" />
+                  <p><s>R$ 19,90</s><b> - R$ 10,90</b><br>em várias cores vibrantes<br>Bite Max</p>
+                  <button>Compra</button>
+                </div>
+                
+                <div class="card">
+                  <img src="assets/shampoo-sanol.webp"class="imagem-produto" alt="Produtos de higiene" />
+                  <p><s>R$ 39,90</s><b> - R$25,90</b><br>Sanol - Shampoo para filhotes</p>
+                  <button>Compra</button>
+                </div>
+              
+                <div class="card">
+                  <img src="assets/cama-de-cachorro-verde.webp"class="imagem-produto" alt="Produtos de conforto" />
+                  <p><s>R$ 79,90</s><b> - R$55,90</b><br>Tamanhos P,M,G<br>Dog Dreams</p>
+                  <button>Compra</button>
+                </div>
+            </div>
 
-            <a href="produtos.html">
-              <div class="card">
-                <h3>Conforto</h3>
-                <img src="assets/cama-de-cachorro-verde.webp" alt="Produtos de conforto" />
-                <p><s>R$ 79,90</s><b> - R$55,90</b><br><br>Dog Dreams<br>Disponível em tamanhos P,M,G</p>
-              </div>
-            </a>
+            <div id="produtos-mais-vendidos"></div>
+            <h2>Produtos mais vendidos</h2>
+
+            <div class="cards">
+              <a href="produtos.html">
+                <div class="card">
+                  <img src="assets/pacote-racao-royal.webp"class="imagem-produto" alt="Ração para cães" />
+                  <p><b>R$120,90 - 6kg</b><br>Ração Royal<br>Gato Filhote</p>
+                  <a href="produtos.html"><button>Compra</button></a>
+                </div>
+
+                <div class="card">
+                  <img src="assets/kong-brinquedo-morder.webp"class="imagem-produto" alt="Brinquedo para gatos" />
+                  <p><b>R$65,90</b><br>KONG<br>Brinquedo mordedor</p>
+                  <button>Compra</button>
+                </div>
+
+                <div class="card">
+                  <img src="assets/pasta-dente-Petsmile.jpg"class="imagem-produto" alt="Produtos de higiene" />
+                  <p><b>R$45,90 - 174g</b><br>Petsmile<br>Pasta de dente </p>
+                  <button>Compra</button>
+                </div>
+
+                <div class="card">
+                  <img src="assets/cama-bedsure.webp"class="imagem-produto" alt="Produtos de conforto" />
+                  <p><b>R$200,90</b><br>Bedsure<br>Cama ortopédica</p>
+                  <button>Compra</button>
+                </div>
+            </div>
           </div>
-
-          <div id="produtos-mais-vendidos"></div>
-          <h2>Produtos mais vendidos</h2>
-
-          <div class="cards">
-            <a href="produtos.html">
-              <div class="card">
-                <h3>Rações</h3>
-                <img src="assets/pacote-racao-royal.webp" alt="Ração para cães" />
-                <p><b>R$120,90 - 6kg</b><br><br>Ração Royal - Gato Filhote</p>
-              </div>
-            </a>
-
-            <a href="produtos.html">
-              <div class="card">
-                <h3>Brinquedos</h3>
-                <img src="assets/kong-brinquedo-morder.webp" alt="Brinquedo para gatos" />
-                <p><b>R$65,90</b><br><br>KONG - Brinquedo mordedor</p>
-              </div>
-            </a>
-
-            <a href="produtos.html">
-              <div class="card">
-                <h3>Higiene e Cuidados</h3>
-                <img src="assets/pasta-dente-Petsmile.jpg" alt="Produtos de higiene" />
-                <p><b>R$45,90 - 174g</b><br><br>Pasta de dente Petsmile</p>
-              </div>
-            </a>
-
-            <a href="produtos.html">
-              <div class="card">
-                <h3>Conforto</h3>
-                <img src="assets/cama-bedsure.webp" alt="Produtos de conforto" />
-                <p><b>R$200,90</b><br><br>Cama ortopédica Bedsure<br>Disponível em tamanhos P,M,G</p>
-              </div>
-            </a>
-          </div>
-
-        <div class="clear"></div>
-      </div>
-      
+        </section>
       
       <aside class="barra-lateral">
         <div>
@@ -163,7 +136,7 @@
           <h3>Avisos!!</h3>
           <img src="assets\cachorro-tomando-vacina.jpg"class="imagem-aside" alt="cachorro tomando vacina" />
           <p>
-            Cuidar da saúde do seu pet é um ato de amor. <br><br>
+            Cuidar da saúde do seu pet é um ato de amor. <br>
             Nossa <strong>Campanha de Vacinação</strong> começa dia <strong>22 de abril</strong> com 
             vacinas essenciais por preço especial!
           </p>
