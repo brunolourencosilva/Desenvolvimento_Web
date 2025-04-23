@@ -212,7 +212,7 @@ button:hover {
   font-size: 1.1rem;
 }
 
-/*========================== CONTAINERS ==========================*/
+/*========================== SOBRE ==========================*/
 
 
 .sobre {
@@ -222,6 +222,21 @@ button:hover {
   margin: 70px auto 20px auto;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.26);
+}
+
+.sobre h2 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 3.2rem;
+  color: #000000;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px #ccc;
+}
+.sobre p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 /*========================== DICA ==========================*/
@@ -421,6 +436,11 @@ button:hover {
   transform: translateY(-5px);
 }
 
+.card img {
+  display: block;
+  margin: 0 auto;
+}
+
 .card p {
   font-size: 1.5rem;
   color: #333;
@@ -457,7 +477,9 @@ button:hover {
 }
 
 .servico-card img {
-  width: 160px;
+  width: 100%;
+  max-width: 560px;
+  height: auto;
   margin-bottom: 15px;
 }
 
@@ -663,6 +685,28 @@ button:hover {
     width: 90%;
     padding: 15px;
     margin-top: 40px;
+  }
+
+  #servicos h2 {
+    font-size: 2rem;
+  }
+
+  .servico-card h3 {
+    font-size: 1.8rem;
+  }
+
+  .servico-card p {
+    font-size: 1.2rem;
+  }
+
+  .tabela-servico {
+    font-size: 0.85rem;
+    overflow-x: auto;
+    display: block;
+  }
+
+  .servico-card {
+    padding: 15px;
   }
 }
 
