@@ -676,7 +676,21 @@ button:hover {
 @media (max-width: 768px) {
   .banner{
     padding-left: 0px;
+    height:300px;
+    padding-top: 50px;
+    padding-left: 250px;
   }
+  
+  .banner h1 {
+    font-size: 2em;
+    font-family: "Boldonse", system-ui;
+  }
+
+  .banner p {
+    font-size: 1em;
+    font-family: "Boldonse", system-ui;
+  }
+
   .container-principal {
     flex-direction: column;
     align-items: center; /* Centraliza o conteúdo em telas menores */
@@ -723,6 +737,7 @@ button:hover {
 }
 
 @media (max-width: 600px) {
+
   .menu-hover ul {
     flex-direction: column;
     align-items: center;
@@ -733,7 +748,7 @@ button:hover {
   }
 
   nav a {
-    font-size: 1.2rem; /* fonte menor em telas menores */
+    font-size: 1.5rem; /* fonte menor em telas menores */
   }
 
   .card {
