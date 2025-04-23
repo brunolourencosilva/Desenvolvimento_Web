@@ -148,6 +148,15 @@ button:hover {
   margin: 40px;
 }
 
+.texto-section{
+  color: #000000;
+  background-color: #79dbd8;
+  border-radius: 10px;
+  font-size: 50px;
+  padding: 5px;
+  width: 100%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.205);
+}
 /*========================== IMAGENS ==========================*/
 
 .imagem-produto{
