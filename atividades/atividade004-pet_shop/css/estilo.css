@@ -75,31 +75,31 @@ button:hover {
 }
 
 /*========================== NAVEGAÇÃO ==========================*/
-/* Menu principal */
-.menu-hover ul {
-  list-style: none;
-  margin: 0;
+
+.menu-hover ul{
+  list-style-type: none;
   padding: 0;
-  background-color: #306377;
+  margin: 0;
   display: flex;
-  position: relative;
   justify-content: center;
+  background-color: #1d6a97;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.336);
 }
 
-/* Itens principais */
 .menu-hover li {
-  position: relative;
+  margin-right: 20px;
 }
 
-.menu-hover a {
-  display: block;
-  padding: 15px 20px;
-  color: white;
+.menu-hover a{
   text-decoration: none;
+  padding: 15px;
+  color: rgb(255, 255, 255);
+  display: block;
 }
 
-.menu-hover a:hover {
-  background-color: #79dbd8;
+.menu-hover a:hover{
+  background-color: #4295bb;
+  transition: 0.3s;
 }
 
 /*========================== BANNER ==========================*/
@@ -592,76 +592,75 @@ button:hover {
   list-style-type: none;
 }
 
-/*========================== BOTÃO ==========================*/
-/* Botão flutuante */
+/* == Botão flutuante fixo no canto da tela == */
 .botao-flutuante {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  z-index: 999;
+  position: fixed;         /* Fixa o botão em relação à janela, não rola com a página */
+  bottom: 30px;            /* Distância do botão até a base da janela */
+  right: 30px;             /* Distância do botão até o canto direito */
+  z-index: 999;            /* Garante que fique sobre quase tudo */
 }
 
-/* Esconde o checkbox */
+/* == Esconde o checkbox que controla o menu == */
 #toggle-menu {
-  display: none;
+  display: none;           /* Oculta o input visualmente (mas ainda funcional) */
 }
 
-/* Estilo do botão */
+/* == Estilo visual do botão flutuante == */
 .botao-flutuante .btn {
-  width: 60px;
-  height: 60px;
-  display: flex;
+  width: 60px;             
+  height: 60px;            
+  display: flex;           
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  background-color: #ffbc02;
-  color: white;
-  font-size: 2rem;
-  cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  transition: background-color 0.3s ease;
+  border-radius: 50%;      
+  background-color: #ffbc02; 
+  color: white;            
+  font-size: 2rem;         
+  cursor: pointer;         
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
+  transition: background-color 0.3s ease;    
 }
 
 .botao-flutuante .btn:hover {
   background-color: #c79202;
 }
 
-/* Menu oculto por padrão */
+/* == Menu que aparece ao ativar o botão == */
 .conteudo-deslizante {
-  display: none;
-  position: fixed;
-  bottom: 100px;
-  right: 30px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  padding: 10px;
-  flex-direction: column;
-  gap: 10px;
+  display: none;            /* Inicialmente oculto */
+  position: fixed;          /* Fixa o menu também */
+  bottom: 100px;            /* Acima do botão flutuante */
+  right: 30px;              /* Alinhado com o botão */
+  background-color: #ffffff; /* Fundo branco */
+  border-radius: 10px;      /* Cantos arredondados */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra leve */
+  padding: 10px;            /* Espaço interno */
+  flex-direction: column;  /* Links empilhados verticalmente */
+  gap: 10px;                /* Espaço entre os links */
 }
 
-/* Estilo dos links */
+/* == Estilo dos links do menu == */
 .conteudo-deslizante a {
-  text-decoration: none;
-  color: #333;
-  font-size: 1.2rem;
-  padding: 5px 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  text-decoration: none;   /* Sem sublinhado */
+  color: #333;             /* Cor discreta e legível */
+  font-size: 1.2rem;       /* Levemente maior que o normal */
+  padding: 5px 10px;       /* Área clicável agradável */
+  border-radius: 5px;      /* Bordas suaves */
+  transition: background-color 0.3s ease; /* Suavidade ao interagir */
 }
 
 .conteudo-deslizante a:hover {
-  background-color: #f0f0f0;
+  background-color: #f0f0f0; /* Cor de fundo ao passar o mouse */
 }
 
-/* Mostra o menu quando o checkbox está marcado */
+/* == Exibe o menu se o checkbox estiver marcado == */
 #toggle-menu:checked ~ .conteudo-deslizante {
-  display: flex;
-  animation: slideUp 0.3s ease forwards;
+  display: flex;                         /* Exibe os links em coluna */
+  animation: slideUp 0.3s ease forwards; /* Animação suave de "subir" */
 }
 
 /*========================== RESPONSIVO ==========================*/
-/* Animação */
+
 @keyframes slideUp {
   from {
     opacity: 0;
@@ -693,12 +692,12 @@ button:hover {
 
   .container-principal {
     flex-direction: column;
-    align-items: center; /* Centraliza o conteúdo em telas menores */
+    align-items: center;
   }
 
   .area-conteudo,
   .barra-lateral {
-    width: 100%; /* Garante que a área de conteúdo e o aside ocupem toda a largura */
+    width: 100%;
     padding: 10px;
   }
 
@@ -748,7 +747,7 @@ button:hover {
   }
 
   nav a {
-    font-size: 1.5rem; /* fonte menor em telas menores */
+    font-size: 1.5rem;
   }
 
   .card {
