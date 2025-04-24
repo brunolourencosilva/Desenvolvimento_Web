@@ -82,7 +82,7 @@ button:hover {
   margin: 0;
   display: flex;
   justify-content: center;
-  background-color: #1d6a97;
+  background-color: #3aa5c0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.336);
 }
 
@@ -108,7 +108,7 @@ button:hover {
   text-align: center;
   font-weight: bold;
   padding-top: 50px;
-  padding-left: 800px;
+  padding-right: 800px;
   height: 550px;
 
   background-image: url("../assets/cachorro-oculos.jpg");
@@ -122,7 +122,7 @@ button:hover {
 }
 
 .banner h1 {
-  font-size: 5em;
+  font-size: 10em;
   font-family: "Boldonse", system-ui;
 }
 
@@ -677,11 +677,11 @@ button:hover {
     padding-left: 0px;
     height:300px;
     padding-top: 50px;
-    padding-left: 250px;
+    padding-right: 160px;
   }
   
   .banner h1 {
-    font-size: 2em;
+    font-size: 2.7em;
     font-family: "Boldonse", system-ui;
   }
 
