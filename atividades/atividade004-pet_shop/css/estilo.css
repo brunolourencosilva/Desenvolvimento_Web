@@ -329,6 +329,65 @@ button:hover {
 .dicas-video a:hover {
   color: #e67e22;
 }
+/*========================== AGENDA ==========================*/
+
+#agenda {
+  padding: 40px 20px;
+  background-color: #fefefe;
+  border-top: 2px solid #1b8888;
+  border-bottom: 2px solid #1b8888;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+
+.formulario-agenda {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formulario-agenda input,
+.formulario-agenda textarea {
+  padding: 10px;
+  border: 1px solid #a7a7a7;
+  border-radius: 6px;
+  font-size: 1em;
+  width: 100%;
+}
+
+.formulario-agenda button {
+  padding: 12px;
+  background-color: #539aeb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-agenda button:hover {
+  background-color: #3d71a1;
+}
+
+.grupo-selects {
+  flex: 1;
+  display: flex;
+  gap: 10px; /* Espaço entre os selects */
+  flex-wrap: wrap; /* Para quebrar linha em telas pequenas */
+  text-align: center;
+}
+
+.grupo-selects select {
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
 
 /*========================== CONTATO ==========================*/
 

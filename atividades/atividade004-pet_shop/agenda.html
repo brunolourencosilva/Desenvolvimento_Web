@@ -34,30 +34,49 @@
 
     <main class="container-principal">
       <div class="area-conteudo">
-        <section class="contato">
-          <h2>Fale Conosco</h2>
+        <section id="agenda">
+          <h2>Agende um horario</h2>
           <p>quer marcar um horário? Entre em contato conosco!</p>
         
           <div class="contato-conteudo">
         
             <!-- Formulário -->
-            <form class="formulario">
+            <form class="formulario-agenda">
               <label for="nome">Nome:</label>
               <input type="text" id="nome" name="nome" required>
         
               <label for="email">Email:</label>
               <input type="email" id="email" name="email" required>
-        
-              <label for="mensagem">Mensagem:</label>
-              <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+              <label for="categoria">Escolha um horario:</label>
+              <select name="categoria" id="categoria">
+                <option value="">Horarios vagos:</option>
+                <option value="11:40">11:40</option>
+                <option value="13:30">13:30</option>
+                <option value="14:50">14:50</option>
+                <option value="15:30">15:30</option>
+              </select>
+
+              <label for="categoria">Escolha um Serviço de banho e tosa:</label>
+              <select name="categoria" id="categoria">
+                <option value="">Serviços disponiveis:</option>
+                <option value="banho-tosa">Banho e tosa</option>
+                <option value="banho<">Banho</option>
+              </select>
+
+              <label for="categoria">Escolha um Serviço de Bem estar:</label>
+              <select name="categoria" id="categoria">
+                <option value="">Serviços disponiveis:</option>
+                <option value="check-up">check-up</option>
+                <option value="vermifugo<">Aplicação de Vermifugo</option>
+                <option value="antipulgas<">Aplicação de Antipulgas</option>
+                <option value="microchipagem<">Microchipagem</option>
+                <option value="consulta-especializada<">Consulta Especializada</option>
+              </select>
+              
         
               <button type="submit">Enviar</button>
             </form>
-        
-            <!-- Mapa -->
-            <div class="mapa">
-              <img src="assets\mapa.png" alt="Cachorro com medo de fogos" />
-            </div>
           </div>
         
           <!-- Informações de Contato -->

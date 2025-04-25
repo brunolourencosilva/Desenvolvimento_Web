@@ -41,6 +41,77 @@
 
     <main class="container-principal">
       <div class="area-conteudo">
+        <section id="agenda">
+          <h2>Agende um horario</h2>
+          <p>quer marcar um horário? Entre em contato conosco!</p>
+        
+          <div class="contato-conteudo">
+        
+            <!-- Formulário -->
+            <form class="formulario-agenda">
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome" required>
+        
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+              
+              <div class="cards">
+                <div class="card">
+                  <label for="categoria">Escolha um horario:</label>
+                  <select name="categoria" id="categoria">
+                    <option value="">Horarios vagos:</option>
+                    <option value="11:40">11:40</option>
+                    <option value="13:30">13:30</option>
+                    <option value="14:50">14:50</option>
+                    <option value="15:30">15:30</option>
+                  </select>
+                </div>
+
+                <div class="card">
+                  <label for="categoria">Escolha um Serviço de banho:</label>
+                  <select name="categoria" id="categoria">
+                    <option value="">Serviços disponiveis:</option>
+                    <option value="banho-tosa">Banho e tosa</option>
+                    <option value="banho<">Banho</option>
+                  </select>
+                </div>
+
+                <div class="card">
+                  <label for="categoria">Escolha um Serviço de saude:</label>
+                  <select name="categoria" id="categoria">
+                    <option value="">Serviços disponiveis:</option>
+                    <option value="check-up">check-up</option>
+                    <option value="vermifugo<">Aplicação de Vermifugo</option>
+                    <option value="antipulgas<">Aplicação de Antipulgas</option>
+                    <option value="microchipagem<">Microchipagem</option>
+                    <option value="consulta-especializada<">Consulta Especializada</option>
+                  </select>
+                </div>
+                
+                <div class="card">
+                  <label for="categoria">Escolha um Serviço de vacinação:<br></label>
+                  <select name="categoria" id="categoria">
+                    <option value="">Serviços disponiveis:</option>
+                    <option value="V10">V10</option>
+                    <option value="antirrábica<">Antirrábica</option>
+                    <option value="giardia<">Giardia</option>
+                  </select>
+                </div>
+                <div class="card">
+                  <label for="categoria">Escolha o porte do Pet:</label>
+                  <select name="categoria" id="categoria">
+                    <option value="">Portes Disponiveis:</option>
+                    <option value="porte-pequeno">Porte pequeno</option>
+                    <option value="porte-medio<">Porte medio</option>
+                    <option value="porte-grande<<">Porte grande</option>
+                  </select>
+                </div>
+              </div>
+        
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+        </section>
         <section id="servicos">
           <h2>Serviços de higiene e cuidado</h2>
           <div id="banho-tosa"></div>
@@ -75,10 +146,6 @@
                 <td>R$ 90,00</td>
               </tr>
             </table>
-            <a href="contato.html">
-              <button>Agendar</button>
-            </a>
-            
           </div>
         </section>
 
@@ -125,10 +192,6 @@
                 <td>R$ 150,00</td>
               </tr>
             </table>
-
-            <a href="contato.html">
-              <button>Agendar</button>
-            </a>
             
           </div>
         </section>
@@ -171,11 +234,6 @@
                 <td>R$ 60,00</td>
               </tr>
             </table>
-
-            <a href="contato.html">
-              <button>Agendar</button>
-            </a>
-            
           </div>
         </section>
       </div>
