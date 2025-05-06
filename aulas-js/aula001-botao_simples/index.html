@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo de classe ids</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+  <body>
+    <!--Exemplo ruim (obstrutivo)-->
+    <button onclick="alert('ok')">Clique</button> <!--JS misturado com html-->
+
+    <!--Exemplo correto (nao obstrutivo)-->
+    <button id="meubotao">Clique</button>
+    <script>
+      document.getElementById("meubotao").addEventListener("click",()=>{
+      alert("ok");
+      });
+    </script>
+  </body>
+</html>
