@@ -1,52 +1,41 @@
-// Aguarda o carregamento completo do HTML antes de rodar o script
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener("DOMContentLoaded", function(){
 
-    // Obtém a referência ao elemento <ul> com id "ListaBreakContinue"
-    const ul = document.getElementById('listaBreakContinue');
+    const resultado = document.getElementById("resultado");
 
-    // Função que limpa o conteúdo da lista (Zera o conteudo da <ul>)
+    let numero_1 = Number(document.getElementById("numero_1").value);
+    let numero_2 = Number(document.getElementById("numero_2").value);
+
+    const somar = document.getElementById("btnSomar");
+
+    const subtração = document.getElementById("btnSubtração");
+
+    const dividir = document.getElementById("btnDividir");
+
+    const multiplicar = document.getElementById("btnMultiplicar");
+
     const limpar = () => ul.innerHTML = '';
 
-    // Função que adiciona um item <li> com texto especificado dentro da <ul>
-    const add = texto => {
-        // Cria um novo elemento <li>
-        const li = document.createElement('li');
-        // Define o texto do <li>
-        li.textContent = texto;
-        // adiciona o <li> como filho da <ul>
-        //append: adiciona um elemento filho dentro de outro elemento HTML
-        ul.appendChild(li);
-    };
+    somar.addEventListener("click", function (){
+        let numero_1 = Number(document.getElementById("numero_1").value);
+        let numero_2 = Number(document.getElementById("numero_2").value);
+        resultado.textContent = numero_1 + numero_2
+    })
 
-    // Evento ao clicar no botão com id "btnBreak"
-    document.getElementById('btnBreak').addEventListener('click', function () {
-        limpar();
-        // loop de 1 a 50
-        for (let i = 1; i <= 50; i++) {
+    subtração.addEventListener("click", function (){
+        let numero_1 = Number(document.getElementById("numero_1").value);
+        let numero_2 = Number(document.getElementById("numero_2").value);
+        resultado.textContent = numero_1 - numero_2
+    })
 
-            // Se o número for divisivel por 13...
-            if (i % 13 === 0) {
-                // Adicona mensagem
-                add('Parou no ' + i + ' (divisivel por 13!)');
-                // Encerra o loop imediatamente
-                break;
-            }
-            // Caso não seja divisivel por 13, apenas adiciona o número na listagem
-            add(i);
-        }
-    });
+    dividir.addEventListener("click", function (){
+        let numero_1 = Number(document.getElementById("numero_1").value);
+        let numero_2 = Number(document.getElementById("numero_2").value);
+        resultado.textContent = numero_1 / numero_2
+    })
 
-    // Evento ao clicar no botão com id "btnContinue"
-    document.getElementById('btnContinue').addEventListener('click', function () {
-        limpar();
-        
-        // Loop 1 a 5
-        for (let i = 1;i <= 5; i++) {
-
-            // Se o número for 3, pula a iteração atual (não adiciona o 3)
-            if (i === 3) continue;
-            // Adiciona o número normalmente se não for 3
-            add(i);
-        }
-    });
-});
+    multiplicar.addEventListener("click", function (){
+        let numero_1 = Number(document.getElementById("numero_1").value);
+        let numero_2 = Number(document.getElementById("numero_2").value);
+        resultado.textContent = numero_1 * numero_2
+    })
+})
