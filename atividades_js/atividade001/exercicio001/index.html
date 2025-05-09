@@ -4,18 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 1: Calculadora Simples</title>
+    <link rel="stylesheet" href="css/estilo.css" />
 </head>
 <body>
-    <h1>Calculadora Simples</h1>
-    <input type="number" id="numero_1" placeholder="Digite um numero">
-    <input type="number" id="numero_2" placeholder="Digite um numero">
+    <header>
+        <h1>Calculadora Simples</h1>
+    </header>
+    <main>
+        <section class="container">
+        
+            <article>
+                <input type="number" id="numero_1" placeholder="Digite um numero">
+                <input type="number" id="numero_2" placeholder="Digite um numero">
+            </article>
 
-    <button id="btnSomar">Somar</button>
-    <button id="btnSubtração">Subtração</button>
-    <button id="btnDividir">Dividir</button>
-    <button id="btnMultiplicar">Multiplicar</button>
-
-    <p id="resultado"></p>
-    <script src="js/script.js"></script>
+            <article>
+                <button id="btnSomar">Somar</button>
+                <button id="btnSubtração">Subtração</button>
+                <button id="btnDividir">Dividir</button>
+                <button id="btnMultiplicar">Multiplicar</button>
+            </article>
+            <article>
+            <p id="resultado">Resultado: </p>
+            </article>
+            <script src="js/script.js"></script>
+        </section>
+    </main>
 </body>
 </html>

@@ -18,24 +18,28 @@ document.addEventListener("DOMContentLoaded", function(){
     somar.addEventListener("click", function (){
         let numero_1 = Number(document.getElementById("numero_1").value);
         let numero_2 = Number(document.getElementById("numero_2").value);
-        resultado.textContent = numero_1 + numero_2
-    })
+        resultado.textContent = 'Resultado: ' + (numero_1 + numero_2);
+
+    });
 
     subtração.addEventListener("click", function (){
         let numero_1 = Number(document.getElementById("numero_1").value);
         let numero_2 = Number(document.getElementById("numero_2").value);
-        resultado.textContent = numero_1 - numero_2
-    })
+        resultado.textContent = 'Resultado: ' + (numero_1 - numero_2);
+
+    });
 
     dividir.addEventListener("click", function (){
         let numero_1 = Number(document.getElementById("numero_1").value);
         let numero_2 = Number(document.getElementById("numero_2").value);
-        resultado.textContent = numero_1 / numero_2
-    })
+        resultado.textContent = 'Resultado: ' + (numero_1 / numero_2);
+
+    });
 
     multiplicar.addEventListener("click", function (){
         let numero_1 = Number(document.getElementById("numero_1").value);
         let numero_2 = Number(document.getElementById("numero_2").value);
-        resultado.textContent = numero_1 * numero_2
-    })
-})
+        resultado.textContent = 'Resultado: ' + (numero_1 * numero_2);
+
+    });
+});
