@@ -59,7 +59,9 @@ input {
     font-size: 1.3em;
     border: solid #000000 2px;
     border-radius: 10px;
+    background-color: #bdbdbd;
 }
+
 footer {
   display: flex;
   flex-wrap: wrap;
@@ -85,7 +87,7 @@ textarea {
 }
 
 .container{
-    background-color: #b30606;
+    background-color: #ffffff;
     width: 40%;
     padding: 60px;
     margin: auto;
@@ -98,7 +100,7 @@ textarea {
 #contador {
     display: flex;
     justify-content: center;
-    background-color: #cccccc;
+    background-color: #bdbdbd;
     text-align: center;
     padding: 0px;
     width:300px;
