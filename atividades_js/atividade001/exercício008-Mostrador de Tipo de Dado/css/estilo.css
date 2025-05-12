@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #bdbdbd;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #72199b;
+  padding: 48px;
+  text-align: center;
+  font-weight: bold;
+  height: 250px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.26);
+}
+
+header h1 {
+  margin-top: 10px;
+  font-size: 4em;
+  font-family: "Boldonse", system-ui;
+  color: #ffffff;
+}
+
+button{
+  display: block;
+  width: 100%;
+  margin: 20px 0;
+  padding: 20px;
+  font-size: 1.2em;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.26);
+  border: none;
+}
+
+button {
+  background-color: #eeeeee;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #7f1cad;
+  color: white;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #333333;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+  .container {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 500px;
+    padding: 60px;
+    margin: 100px auto;
+    border-radius: 10px;
+    box-shadow: 6px 6px 6px rgba(111, 25, 168, 0.377);
+    text-align: center;
+  }
+
+  #CampoEntrada {
+    text-align: center;
+    background-color: #dddddd;
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.26);
+    border: none;
+  }
+  
+  #Resultado {
+    text-align: center;
+    background-color: #dddddd;
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.26);
+    border: none;
+  }
+
+  #Resultado p {
+  font-size: 1.5em;
+  }
