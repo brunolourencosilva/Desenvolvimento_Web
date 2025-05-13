@@ -1,17 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const entrada = document.getElementById("entrada");
-  const botao = document.getElementById("btnVerificar");
+  const entrada = document.getElementById("CampoEntrada");
+  const botao = document.getElementById("verificar");
   const resultado = document.getElementById("resultado");
 
   botao.addEventListener("click", function () {
-    const valor = entrada.value;
+    const valor = entrada.value.trim();
 
     if (valor === "") {
       resultado.textContent = "Por favor, digite algo.";
     } else if (!isNaN(valor)) {
-      resultado.textContent = "Tipo: Number";
+      resultado.textContent = "Tipo: number";
     } else {
-      resultado.textContent = "Tipo: String";
+      resultado.textContent = "Tipo: string";
     }
   });
 });
