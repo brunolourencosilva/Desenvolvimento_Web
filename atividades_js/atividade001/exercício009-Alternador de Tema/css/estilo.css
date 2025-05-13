@@ -13,7 +13,8 @@ body {
 }
 
 header {
-  background-color: #000000;
+  color: white;
+  background-color: #333333;
   padding: 48px;
   text-align: center;
   font-weight: bold;
@@ -25,7 +26,6 @@ header h1 {
   margin-top: 10px;
   font-size: 4em;
   font-family: "Boldonse", system-ui;
-  color: #ffffff;
 }
 
 button{
@@ -40,12 +40,12 @@ button{
 }
 
 button {
-  background-color: #eeeeee;
+  background-color: #a5a5a5;
   transition: 0.3s;
 }
 
 button:hover {
-  background-color: #7f1cad;
+  background-color: #383838;
   color: white;
   cursor: pointer;
 }
@@ -62,13 +62,14 @@ footer {
 }
 
 #container {
+  color: white;
   background-color: #000000;
   width: 90%;
   max-width: 500px;
   padding: 60px;
   margin: 100px auto;
   border-radius: 10px;
-  box-shadow: 6px 6px 6px rgba(111, 25, 168, 0.377);
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.377);
   text-align: center;
 }
 
