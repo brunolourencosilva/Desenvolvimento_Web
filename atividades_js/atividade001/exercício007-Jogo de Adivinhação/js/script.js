@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let numeroSorteado = 0;
 
-  // Quando clicar em "Re/Começar jogo"
   btnSortear.addEventListener("click", function () {
     numeroSorteado = Math.floor(Math.random() * 10) + 1;
     dica.textContent = "Tente acerta o numero sorteado";
