@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #bcbcbc;
+    padding: 1em 0;
+}
+
+#temporizador-section {
+    margin-top: 50px;
+}
+
+#iniciar {
+    padding: 10px 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#contador {
+    margin-top: 20px;
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+}

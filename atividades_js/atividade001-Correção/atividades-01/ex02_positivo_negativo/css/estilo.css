@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 1em 0;
+    box-shadow: 1px 1px 1.5px 0px #504e4e;
+    margin-bottom: 10px;
+}
+
+main {
+    width: 55%;
+    height: auto;
+    background-color: #f0f0f0;
+    line-height: 50px;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+input {
+    width: 30px;
+}
+
+#btnVerificar {
+    width: 60px;
+    color: rgb(245, 239, 239);
+    background-color: brown;
+    border-color: white;
+}

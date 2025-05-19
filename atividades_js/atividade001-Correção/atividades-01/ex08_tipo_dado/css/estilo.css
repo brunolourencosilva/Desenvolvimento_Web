@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #eef0f2;
+}
+
+header {
+    background-color: #d0d0d0;
+    padding: 1em 0;
+}
+
+#tipo-dado {
+    margin-top: 40px;
+}
+
+#entrada {
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#verificar-tipo {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#resultado-tipo {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}

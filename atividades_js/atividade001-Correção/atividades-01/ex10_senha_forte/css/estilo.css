@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+header {
+    background-color: #cccccc;
+    padding: 1em 0;
+}
+
+#validador-senha {
+    margin-top: 40px;
+}
+
+#senha {
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#validar {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#resultado-senha {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
