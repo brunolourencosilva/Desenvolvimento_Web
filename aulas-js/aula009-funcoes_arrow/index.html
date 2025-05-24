@@ -3,19 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Funções anonimas</title>
+    <title>Arrow Function Simples</title>
     <link rel="stylesheet" href="css/estilo.css" />
 </head>
 <body>
-    <main class="container">
-        <h1>exemplo: Funções anonimas</h1>
-        <p>Clique no botão abaixo para ver uma saudação usando função anonima.</p>
-        <div class="button-group">
-            <button id="saudar" class="btn">Saudação</button>
-            <button id="limpar" class="btn">Limpar</button>
+    <main>
+        <div class="container">
+            <h1>Exemplo de Arrow Function</h1>
+
+            <div class="input-group">
+                <label for="numero">Digite um numero:</label>
+                <input type="number" id="numero" placeholder="Ex: 5">
+            </div>
+
+            <button id="dobro">Calcular Dobro</button>
+            <button id="triplo">Calcular Tiplo</button>
+
+            <div class="resultado">
+                <p id="resultado"></p>
+            </div>
         </div>
-        <div id="resultado" class="caixa-resultado"></div>
-        <h1>Implemento esse codigo para receber o nome via teclado!</h1>
     </main>
     <script src="js/script.js"></script>
 </body>

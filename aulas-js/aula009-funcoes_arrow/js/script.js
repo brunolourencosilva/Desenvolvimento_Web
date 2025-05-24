@@ -1,35 +1,54 @@
-// Define uma função de saudação que recebe um nome como parametro
-// esta função retorna uma mensagem de-vindas personalizada
-const saudação = function (nome){
-    return `Ola, ${nome}! Seja bem-vindo(a).`;
-};
+// ==============================================
+// FUNÇÕES DE CÁLCULOS (Arrow Functions)
+// ==============================================
+const dobrar = numero => numero * 2;
+const triplicar = numero => numero *3;
 
-// Esta função exibe uma mensagem no elemento de resultado da pagina
-// Revebe a mensagem como parametro e a insere no html
-const mostraResultado = (mensagem) =>{
-    // Obtem o elemento do DOM com ID `resultado`
-    const resultadoElement = document.getElementById('resultado');
-    // Define o conteudo HTML do elemento com a mensagem formatada em um paragrafo
-    resultadoElement.innerHTML = `<p>${mensagem}</p>`;
-};
+// ==============================================
+// FUNÇÃO DE EXIBIÇÃO DE RESULTADOS
+// ==============================================
+function mostrarResultado(operacao,texto) {
+    // Obtém referencias aos elementos DOM
+    const input = document.getElementById('numero'); // Campo de entrada
+    const resultado = document.getElementById('resultado'); // Eleento para exibir resulados
 
-// Aguarda o evento de que todo o DOM foi carregado antes de executar o codigo
-document.addEventListener('DOMContentLoaded', () =>{
-    // Obtem referencia aos botões do DOM pelos seus IDS
-    const saudarBtn = document.getElementById('saudar');
-    const limparBtn = document.getElementById('limpar');
+    // Converte o valor de string para número decimal
+    const numero = parseFloat(input.value);
 
-    // Adiciona um listener de evento de clique no botão "Saudar"
-    saudarBtn.addEventListener('click',function(){
-        // Chama a função de saudação com o nome "joão" e armazenar o resultado
-        const mensagem = saudação("João");
-        // Chama a função para exibir o resultado na pagina
-        mostraResultado(mensagem)
-    });
+    // Validação de entrada - verifica se nãoi é um numero
+    if (isNaN(numero)) {
+        resultado.textContent = 'Por favor, digite um número válido';
+        resultado.style.color = 'red'; // Feedback visual de erro
+        return;
+    }
 
-    // Adicionar um listener de evento de clique no batão "Limpar"
-    limparBtn.addEventListener('click',() =>{
-        // Limpar o conteudo do elemento de resultado definido seu HTML para vazio
-        document.getElementById('resultado').innerHTML = '';
-    });
+    // Execuyta a operação matemática (dobrar ou triplicar)
+    const valor = operacao(numero);
+
+    // Formata a operação matématica (dobrar ou triplicar)
+    resultado.textContent = `${texto} de ${numero} é: ${valor}`;
+    resultado.style.color = 'black';
+}
+
+// ==============================================
+// EVENT LISTENERS - INTERAÇÕES DO USÚARIO
+// ==============================================
+
+// Botão "Dobro" - Calcula e exibe o dobro do número
+document.getElementById('dobro').addEventListener('click', function() {
+    mostrarResultado(dobrar, 'O Dobro');
+});
+
+// Botão "Triplo" - Calcula e exibe o triplo do número
+document.getElementById('triplo').addEventListener('click', function() {
+    mostrarResultado(dobrar, 'O Triplo');
+});
+
+// Campo numérico  - Permite Calcula com a telca Enter
+document.getElementById('numero').addEventListener('keypress', function(enter) {
+    // Verifica se a tecla pressionada foi Enter (codigo 13)
+    if (enter.key === 'Enter') {
+        // Por padrão, calcula o dobro Enter é pressionado
+        mostrarResultado(dobrar, 'O dobro')
+    }
 });
