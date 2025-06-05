@@ -1,0 +1,60 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #2f7a32;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Área principal */
+main {
+    padding: 20px;
+}
+
+/* Seletor de categoria */
+section:first-of-type {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+select {
+    padding: 5px;
+}
+
+/* Lista de produtos */
+#Produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+#Produtos li {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 180px;
+}
+
+/* Total */
+div p {
+    display: inline;
+    font-weight: bold;
+    margin-right: 5px;
+}
