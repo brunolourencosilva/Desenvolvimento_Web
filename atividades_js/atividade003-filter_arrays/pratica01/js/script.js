@@ -32,12 +32,10 @@ document.addEventListener("DOMContentLoaded", () => {
       const item = document.createElement("li");
 
       const nome = document.createElement("p");
-      nome.classList.add("nome-produto");
       nome.textContent = produto.nome;
       nome.style.fontWeight = "bold";
 
       const preco = document.createElement("p");
-      preco.classList.add("preco-produto");
       preco.textContent = `R$ ${produto.preco.toFixed(2)}`;
 
       item.append(nome, preco);
