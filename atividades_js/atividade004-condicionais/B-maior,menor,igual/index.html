@@ -2,3 +2,39 @@
 de dados. Sua tarefa é criar uma página onde o usuário digite três números, e ao
 clicar em um botão, o site informe qual é o maior número, o menor ou se todos
 são iguais. A interface deve ser clara, amigável e com feedback imediato. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maior ou é menor</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+  <body>
+
+    
+    <main>
+      <form id="formulario">
+        <header>
+          <h1>É maior ou é menor?</h1>
+        </header>
+
+        <label for="valor1">Escreva o 1º valor</label>
+        <input id="valor1" type="number">
+
+        <label for="valor2">Escreva o 2º valor</label>
+        <input id="valor2" type="number">
+
+        <label for="valor3">Escreva o 3º valor</label>
+        <input id="valor3" type="number">
+
+        <button type="button" id="verificar">Verificar numero</button>
+
+        <h2>O resultado: <span id="resultado"></span></h2>
+      </form>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
