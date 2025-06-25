@@ -3,19 +3,19 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    background-color: #dadada;
+        font-size: 20px;
 }
 
 header {
-    background-color: #f0f0f0;
+    background-color: #4ec9df;
     padding: 1em 0;
-    box-shadow: 1px 1px 1.5px 0px #504e4e;
     margin-bottom: 10px;
 }
 
 main {
     width: 55%;
     height: auto;
-    background-color: #f0f0f0;
     line-height: 50px;
     margin: 0px auto;
     padding: 20px;
@@ -27,16 +27,21 @@ input {
 
 #verificar {
     width: 150px;
+    height: 50px;
     color: rgb(245, 239, 239);
-    background-color: rgb(71, 71, 71);
-    border-color: white;
+    background-color: rgb(92, 101, 112);
+    border-radius: 10px;
+    font-size: 20px;
 }
 
 #formulario {
-    width: 55%;
+    width: 400px;
     height: auto;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     line-height: 50px;
     margin: 0px auto;
-    padding: 20px;
+    padding-bottom: 10px;
+
+    border-radius: 10px;
+    border: #888888 solid 5px;
 }
