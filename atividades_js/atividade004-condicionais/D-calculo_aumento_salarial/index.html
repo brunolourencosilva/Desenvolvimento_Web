@@ -7,5 +7,32 @@ maior que R$1500,00, aplica-se um aumento de 5%.
 
 Se o salário for entre R$1000,00 e R$1500,00 (inclusive), o salário permanece o mesmo.
 
-O sistema tambémdeve verificar se o valor informado não é zero ou negativo e, nesse caso, exibir
+O sistema também deve verificar se o valor informado não é zero ou negativo e, nesse caso, exibir
 uma mensagem de erro. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcular salario</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+  <body>
+
+    <main>
+      <form id="formulario">
+        <h1 id="titulo_estilo">Calcular salario</h1>
+
+        <label for="valor">Insira seu salario atual</label>
+        <input id="valor" type="number">
+
+        <button type="button" id="verificar">Verificar salario</button>
+
+        <h2 id="resultado">O resultado: <span id="resultado"></span></h2>
+      </form>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
