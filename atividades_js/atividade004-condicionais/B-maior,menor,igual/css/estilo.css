@@ -16,18 +16,27 @@ header {
     background-color: #4ec9df;
     padding: 1em 0;
     margin-bottom: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 main {
-    width: 55%;
-    height: auto;
-    line-height: 50px;
-    margin: 0px auto;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    flex-direction: column;
 }
+
 
 input {
     width: 100px;
+}
+
+#resultado{
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px;
 }
 
 #verificar {
@@ -37,18 +46,23 @@ input {
     background-color: rgb(92, 101, 112);
     border-radius: 10px;
     font-size: 20px;
+    margin-top: 20px;
 }
 
 #formulario {
+    display: flex;              
     flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+
     width: 450px;
     height: auto;
     background-color: #ffffff;
-    line-height: 50px;
     margin: 0px auto;
     padding-bottom: 10px;
 
     border-radius: 10px;
     border: #888888 solid 5px;
 }
+
 
