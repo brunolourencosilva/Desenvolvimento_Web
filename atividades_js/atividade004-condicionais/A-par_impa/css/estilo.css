@@ -14,11 +14,11 @@ header {
 }
 
 main {
-    width: 55%;
-    height: auto;
-    line-height: 50px;
-    margin: 0px auto;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    flex-direction: column;
 }
 
 input {
@@ -41,7 +41,8 @@ input {
     line-height: 50px;
     margin: 0px auto;
     padding-bottom: 10px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.404);
 
     border-radius: 10px;
-    border: #888888 solid 5px;
+    border:#4ec9df solid 5px;
 }

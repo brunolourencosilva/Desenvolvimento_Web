@@ -54,6 +54,10 @@ input {
     margin-top: 20px;
 }
 
+#verificar:hover {
+    background-color: rgb(73, 73, 73);
+}
+
 #formulario {
     display: flex;              
     flex-direction: column;
@@ -65,9 +69,10 @@ input {
     background-color: #ffffff;
     margin: 0px auto;
     padding-bottom: 10px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.404);
 
     border-radius: 10px;
-    border: #888888 solid 5px;
+    border:#4edf7a solid 5px;
 }
 
 
