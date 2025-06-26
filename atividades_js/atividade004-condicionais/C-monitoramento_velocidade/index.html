@@ -3,3 +3,32 @@ conscientização sobre segurança no trânsito. Sua missão é criar uma págin
 o usuário insere a velocidade de um veículo e o sistema informa se o motorista
 está dentro do limite (até 60 km/h) ou se está acima do permitido, exibindo uma
 mensagem de alerta ou segurança. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Velocidade do veiculo</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+  <body>
+    
+    <main>
+      <form id="formulario">
+        <header>
+          <h1>Velocidade do veiculo</h1>
+        </header>
+
+        <label for="valor">Informe a velocidade do veiculo:</label>
+        <input id="valor" type="number">
+
+        <button type="button" id="verificar">Verificar </button>
+
+        <h2><span id="resultado"></span></h2>
+      </form>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
