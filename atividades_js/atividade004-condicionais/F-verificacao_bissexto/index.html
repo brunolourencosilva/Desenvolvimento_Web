@@ -4,3 +4,30 @@ usuário insere um ano qualquer, e o site verifica se esse ano é bissexto ou n�
 utilizando as regras do calendário gregoriano. O sistema também deve garantir
 que o valor informado seja um número inteiro positivo, mostrando uma mensagem de
 erro se a entrada for inválida. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verificador de ano bissexto</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+  <body>
+
+    <main>
+      <form id="formulario">
+        <h1 id="titulo_estilo">Verificador de ano bissexto</h1>
+
+        <label for="valor">Insira um ano valido:</label>
+        <input id="valor" type="number">
+
+        <button type="button" id="verificar">Verificar ano</button>
+
+        <h2 id="resultado">O resultado: <span id="resultado"></span></h2>
+      </form>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
