@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const resultado = document.getElementById('resultado');
 
     verificarEntrada.addEventListener('click', function () {
-        const A = 1;
-        const B = -6;
-        const C = 5;
+        const A = parseFloat(document.getElementById('valor1').value);
+        const B = parseFloat(document.getElementById('valor2').value);
+        const C = parseFloat(document.getElementById('valor3').value);
         const delta = B ** 2 - 4 * A * C
 
     function raizQuadrada(n) {
