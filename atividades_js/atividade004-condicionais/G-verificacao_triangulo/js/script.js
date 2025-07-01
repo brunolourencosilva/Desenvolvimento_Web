@@ -12,22 +12,34 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // const é uma  uma constante,Isso significa que o identificador valorEntrada1 não poderá ser reatribuído depois de definido
     // valorEntrada1 é o nome da constante (ou variável constante).
-    //
+    // getElementById é um metodo do document e serve para pegar um elemento HTML em expecifico usando o ID
     
     const verificarEntrada = document.getElementById('verificar');
     const resultado = document.getElementById('resultado');
 
     verificarEntrada.addEventListener('click', function () {
+        // .addEventListener(...) É um método que adiciona um ouvinte de evento a um elemento HTML
+        // Permite que o JavaScript reaja a ações do usuário, como cliques, teclas pressionadas, rolagem, etc.
+        // Click É o tipo de evento que será escutado.O evento 'click' ocorre quando o botão é clicado com o mouse (ou pressionado via teclado, se acessível).
+
         const num1 = Number(valorEntrada1.value.trim());
+        // .value Essa propriedade retorna o valor digitado pelo usuário no campo de entrada.Retorna o dado como uma string (texto), mesmo que o tipo seja numérico.
+        // .trim() Remove os espaços em brancos no início e no fim do texto digitado.
+        // Number Função que converte o texto (string) para um número real (float ou inteiro).
+        // ===Essa ação se chama casting = Conversão de tipo !!!!!!!===
+
         const num2 = Number(valorEntrada2.value.trim());
         const num3 = Number(valorEntrada3.value.trim());
 
         // Verificação de entrada inválida
         if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
+            //isNan serve para verificar se o valor não é um numero
             resultado.textContent = 'Por favor, digite três números válidos.';
             return;
         }
         if (num1 + num2 >= num3 && num2 + num3 >= num1 && num3 + num1 >= num2) {
+            // Aplica a lei de desigualdade de triangulo. A soma de dois lados deve ser maior ou igual ao terceiro lado.
+            
             resultado.textContent = `Os valores formam um triângulo.`;
         } else {
             resultado.textContent = `Esses valores não formam um triângulo.`;
