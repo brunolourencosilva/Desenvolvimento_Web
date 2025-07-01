@@ -1,9 +1,19 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+    // document é a estrutura da sua página HTML como um conjunto de nós.
+    // addEventListener é um evento especial que é disparado quando todo o HTML da página foi carregado e interpretado pelo navegador
+    // DOMContentLoaded serve para registrar uma função que será executada quando um determinado evento ocorrer
+    // Function () { ... } É a função anônima (sem nome)
+    // DOM é a representação em árvore da estrutura HTML da sua página !!!
+
     const valorEntrada1 = document.getElementById('valor1');
     const valorEntrada2 = document.getElementById('valor2');
     const valorEntrada3 = document.getElementById('valor3');
 
+    // const é uma  uma constante,Isso significa que o identificador valorEntrada1 não poderá ser reatribuído depois de definido
+    // valorEntrada1 é o nome da constante (ou variável constante).
+    //
+    
     const verificarEntrada = document.getElementById('verificar');
     const resultado = document.getElementById('resultado');
 
