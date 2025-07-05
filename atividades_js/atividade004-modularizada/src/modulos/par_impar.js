@@ -1,11 +1,16 @@
-import { verificar_entrada } from "../utils/utils";
+import { adicionar_evento_click, verificar_entrada } from "../utils/utils.js";
 
 export function calcular_imparPar() {
-    const valor_par_impar = verificar_entrada;
-    const resultado_valor = r
-    if (valor_par_impar % 2 === 0) {
-            resultado_par_impar.textContent = `O número ${valor_par_impar} é par.`;
-        } else {
-            resultado_par_impar.textContent = `O número ${valor_par_impar} é ímpar.`;
+    adicionar_evento_click('verificar_par_impar', () => {
+        const entrada = document.getElementById("valor_par_impar");
+        const resultado = document.getElementById("resultado_par_impar");
+
+        const numero = verificar_entrada(entrada.value);
+
+        if (numero % 2 === 0){
+            resultado.textContent = `O número ${numero} é par.`;
+        } else{
+            resultado.textContent = `O número ${numero} é impar.`
         }
+    });
 }

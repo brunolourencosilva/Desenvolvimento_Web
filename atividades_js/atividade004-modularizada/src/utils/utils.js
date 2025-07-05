@@ -1,12 +1,16 @@
 export function adicionar_evento_click(idBotao, funcao) {
-    document.getElementById(idBotao).addEventListener('click', funcao);
+    const botao = document.getElementById(idBotao);
+    if (botao) {
+        botao.addEventListener('click', funcao);
+    } else {
+        console.error(`Botão com ID '${idBotao}' não encontrado.`);
+    }
 }
 
-export function verificar_entrada(resultado_valor){
-    const valorEntrada = (resultado_valor)
-        if (isNaN(valorEntrada) || Number(valorEntrada.value.trim()) || valorEntrada === null) {
-        //isNan serve para verificar se o valor não é um numero
-        resultado_valor.textContent = 'Por favor, digite valor(es) válido(s).';
-        return;
+export function verificar_entrada(valor) {
+    const numero = parseInt(valor);
+    if (isNaN(numero)) {
+        return "TESTE VERIFICA" ;
     }
+    return numero;
 }

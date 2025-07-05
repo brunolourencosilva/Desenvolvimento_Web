@@ -1,4 +1,5 @@
-import { adicionar_evento_click } from './utils/utils.js';
-import { par_impar} from './utils/utils.js'
+import { calcular_imparPar } from './modulos/par_impar.js';
 
-adicionar_evento_click('verificar_par_impar', par_impar);
+document.addEventListener("DOMContentLoaded", () => {
+    calcular_imparPar();
+});
