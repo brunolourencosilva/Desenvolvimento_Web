@@ -1,16 +1,18 @@
-export function adicionar_evento_click(idBotao, funcao) {
-    const botao = document.getElementById(idBotao);
-    if (botao) {
-        botao.addEventListener('click', funcao);
-    } else {
-        console.error(`Botão com ID '${idBotao}' não encontrado.`);
-    }
+export function botaoEvento(idbotao, funcao) {
+    const botao = document.getElementById(idbotao);
+    botao.addEventListener('click',funcao);
 }
 
-export function verificar_entrada(valor) {
-    const numero = parseInt(valor);
-    if (isNaN(numero)) {
-        return "TESTE VERIFICA" ;
-    }
-    return numero;
+export function printResultado(id,print){
+    const resultado = document.getElementById(id);
+    if (resultado) resultado.innerHTML = print;
+}
+
+export function verificarTipoValor(...entradaDado){
+    return entradaDado.every(v => typeof v === 'number' && !isNaN(v));
+}
+
+export function verificarValor(id){
+    const entrada = parseFloat(document.getElementById(id).value);
+    return isNaN(entrada) ? null : entrada;
 }

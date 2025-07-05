@@ -1,5 +1,5 @@
-import { calcular_imparPar } from './modulos/par_impar.js';
+import { Verificar_parImpar } from "./modulos/par_impar";
 
 document.addEventListener("DOMContentLoaded", () => {
-    calcular_imparPar();
-});
+    Verificar_parImpar();
+})
