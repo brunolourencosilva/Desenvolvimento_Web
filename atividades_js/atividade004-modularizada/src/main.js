@@ -5,6 +5,7 @@ import { calcularAumentoSalario } from "./modulos/aumento_salario.js";
 import { calcularPassagem } from "./modulos/onibus_passagem.js";
 import { VerificarAnoBissexto } from "./modulos/ano_bissexto.js";
 import { VerificarTriangulo } from "./modulos/triangulo_desigual.js";
+import { calcularBhaskara } from "./modulos/bhaskara.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     Verificar_parImpar();
@@ -14,4 +15,5 @@ document.addEventListener("DOMContentLoaded", () => {
     calcularPassagem()
     VerificarAnoBissexto()
     VerificarTriangulo()
+    calcularBhaskara()
 });
