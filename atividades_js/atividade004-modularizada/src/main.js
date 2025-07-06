@@ -4,6 +4,7 @@ import { Verificar_LimiteVelocidade } from "./modulos/limite_velocidade.js";
 import { calcularAumentoSalario } from "./modulos/aumento_salario.js";
 import { calcularPassagem } from "./modulos/onibus_passagem.js";
 import { VerificarAnoBissexto } from "./modulos/ano_bissexto.js";
+import { VerificarTriangulo } from "./modulos/triangulo_desigual.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     Verificar_parImpar();
@@ -12,4 +13,5 @@ document.addEventListener("DOMContentLoaded", () => {
     calcularAumentoSalario()
     calcularPassagem()
     VerificarAnoBissexto()
+    VerificarTriangulo()
 });
