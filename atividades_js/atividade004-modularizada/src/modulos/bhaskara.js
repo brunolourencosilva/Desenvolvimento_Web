@@ -45,20 +45,6 @@ export function calcularBhaskara() {
             const x2 = (-B - raizDelta) / (2 * A);
 
             // Exibição detalhada dos cálculos com explicações
-            printResultado('resultado_bhaskara', `
-                <p><b>Dados fornecidos:</b> A = ${A}, B = ${B}, C = ${C}</p>
-                <p><b>1. Cálculo do Δ:</b></p>
-                <p>Δ = b² - 4ac = (${B})² - 4 × ${A} × ${C} = ${delta}</p>
-
-                <p><b>2. Raiz quadrada de Δ:</b> √${delta} ≈ ${raizDelta.toFixed(2)}</p>
-
-                <p><b>3. Fórmula de Bhaskara:</b></p>
-                <p>x' = (-${B} + √${delta}) / (2 × ${A}) = ${x1.toFixed(2)}</p>
-                <p>x" = (-${B} - √${delta}) / (2 × ${A}) = ${x2.toFixed(2)}</p>
-
-                <p><b>Raízes da equação:</b></p>
-                <p>x' = ${x1.toFixed(2)}</p>
-                <p>x" = ${x2.toFixed(2)}</p>
-            `);
+            printResultado('resultado_bhaskara', `x' = ${x1.toFixed(2)} x" = ${x2.toFixed(2)}`);
     });
 };

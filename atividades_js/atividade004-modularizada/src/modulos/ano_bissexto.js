@@ -4,7 +4,7 @@ export function VerificarAnoBissexto() {
     botaoEvento('verificar_ano', () => {
         const valorInput = verificarValor('valor_ano',);
     
-    if (valorInput === null) {
+    if (valorInput === null || valorInput <= 0 ) {
       printResultado('resultado_ano', 'Por favor, digite um número válido.');
       return;
     }
